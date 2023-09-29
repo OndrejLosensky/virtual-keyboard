@@ -47,10 +47,8 @@ const Keyboard = () => {
 
     return (
         <div>
-            <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
-             {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-sm"> Poslední kliknuté tlačítko: "{x}"  </h3>      
-                <div className="flex justify-center items-center h-screen">
+          
+                <div className="flex justify-start h-screen pt-16 px-28">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2" >
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
@@ -119,8 +117,17 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                             
                         </div>     
-                    </div>                  
-                </div>            
+                    </div>    
+                    <div className="px-24 mx-auto"> 
+                      <div className="flex flex-col"> 
+                        <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+                          {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
+                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-2 text-sm"> Poslední kliknuté tlačítko: "{x}"  </h3>               
+                      </div>  
+                    </div>
+                    
+              </div>         
+              
         </div>            
     )
 }
