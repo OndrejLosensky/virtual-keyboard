@@ -90,7 +90,7 @@ const Keyboard = () => {
                       
                         {/* Čtvrtá řadu znaků CAPS - AC */}   
                         <div className="flex flex-row gap-2">
-                          {["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ů", "AC"].map((key) => (
+                          {["caps lock", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ů", "AC"].map((key) => (
                             <ButtonKey
                               key={key}
                               text={key}
