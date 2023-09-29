@@ -148,6 +148,7 @@ const Keyboard = () => {
 
                         {/* Poslední řada znaků FN - OPTION*/}
                         <div className="flex flex-row gap-2">
+                            
                         </div>     
 
                     </div>
