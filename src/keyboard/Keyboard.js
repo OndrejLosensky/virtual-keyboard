@@ -11,11 +11,16 @@ const Keyboard = () => {
   };
     return (
         <div>
-            <DisplayKey/>
+            <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+            
+             {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
+            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-lg"> Poslední kliknuté tlačítko: "{x}"  </h3>
+                
+                
                 <div className="flex justify-center items-center h-screen">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
 
-                     <h3 className="text-foreColorWhite"> hodnota je: {x} </h3>
+                     
 
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
@@ -47,7 +52,7 @@ const Keyboard = () => {
                             <ButtonKey text="8" onClick={() => handleButtonClick('8')}/>
                             <ButtonKey text="9" onClick={() => handleButtonClick('9')}/>
                             <ButtonKey text="10" onClick={() => handleButtonClick('0')}/>
-                            <ButtonKey text="delete" onClick={() => handleButtonClick('delete')}/>
+                            <ButtonKey text="delete" onClick={() => handleButtonClick('DELETE')}/>
                         </div>
 
                         {/* Třetí řada znaků TAB - ENTER*/}
@@ -69,7 +74,7 @@ const Keyboard = () => {
 
                         {/* Čtvrtá řadu znaků CAPS - AC */}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="caps"/>
+                            <ButtonKey text="caps" onClick={() => handleButtonClick('CAPS LOCK')}/>
                             <ButtonKey text="a" onClick={() => handleButtonClick('A')}/>
                             <ButtonKey text="s" onClick={() => handleButtonClick('S')}/>
                             <ButtonKey text="d" onClick={() => handleButtonClick('D')}/>
@@ -85,7 +90,7 @@ const Keyboard = () => {
                             
                         {/* Pátá řada znaků CONTROL - <>*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="control"/>
+                            <ButtonKey text="control" onClick={() => handleButtonClick('CONTROL')}/>
                             <ButtonKey text="y" onClick={() => handleButtonClick('Y')}/>
                             <ButtonKey text="x" onClick={() => handleButtonClick('X')}/>
                             <ButtonKey text="c" onClick={() => handleButtonClick('C')}/>
