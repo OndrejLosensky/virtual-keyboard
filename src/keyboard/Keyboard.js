@@ -48,17 +48,10 @@ const Keyboard = () => {
     return (
         <div>
             <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
-            
              {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-sm"> Poslední kliknuté tlačítko: "{x}"  </h3>
-    
-
-                
+            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-sm"> Poslední kliknuté tlačítko: "{x}"  </h3>      
                 <div className="flex justify-center items-center h-screen">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2" >
-
-                     
-
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
@@ -126,15 +119,9 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                             
                         </div>     
-
-                    </div>
-                    
-                </div>
-               
-        </div>
-       
-       
-    
+                    </div>                  
+                </div>            
+        </div>            
     )
 }
 
