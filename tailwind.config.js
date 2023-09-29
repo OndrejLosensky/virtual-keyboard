@@ -8,6 +8,7 @@ module.exports = {
     colors: {
       backColor: "#1f212c",
       foreColorWhite: "#fefefe",
+      foreColorBlue: "#96d2f1",
       },
   },
   plugins: [],
