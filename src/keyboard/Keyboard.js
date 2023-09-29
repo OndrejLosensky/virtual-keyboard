@@ -4,10 +4,8 @@ import ButtonKey from "../button/ButtonKey";
 
 const Keyboard = () => {
 
-    // Initialize state for x
   const [x, setX] = useState('');
 
-  // Function to update the value of x when a button is clicked
   const handleButtonClick = (newValue) => {
     setX(newValue);
   };
@@ -38,7 +36,7 @@ const Keyboard = () => {
   
                         {/* druhá řada znaků ; - DELETE*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text=";" onClick={() => handleButtonClick(':')}/>
+                            <ButtonKey text=";" onClick={() => handleButtonClick(';')}/>
                             <ButtonKey text="1" onClick={() => handleButtonClick('1')}/>
                             <ButtonKey text="2" onClick={() => handleButtonClick('2')}/>
                             <ButtonKey text="3" onClick={() => handleButtonClick('3')}/>
