@@ -45,12 +45,6 @@ const Keyboard = () => {
       };
     }, []);
 
-
-
-   
-
-
-
     return (
         <div>
             <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
@@ -67,84 +61,66 @@ const Keyboard = () => {
 
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="esc" isHighlighted={buttonColors["escape"]} onClick={() => handleButtonClick('escape')}/>
-                            <ButtonKey text="f1"  isHighlighted={buttonColors["f1"]} onClick={() => handleButtonClick('F1')}/>
-                            <ButtonKey text="f2"  isHighlighted={buttonColors["f2"]} onClick={() => handleButtonClick('F2')}/>
-                            <ButtonKey text="f3"  isHighlighted={buttonColors["f3"]} onClick={() => handleButtonClick('F3')}/>
-                            <ButtonKey text="f4"  isHighlighted={buttonColors["f4"]} onClick={() => handleButtonClick('F4')}/>
-                            <ButtonKey text="f5"  isHighlighted={buttonColors["f5"]} onClick={() => handleButtonClick('F5')}/>
-                            <ButtonKey text="f6"  isHighlighted={buttonColors["f6"]} onClick={() => handleButtonClick('F6')}/>
-                            <ButtonKey text="f7"  isHighlighted={buttonColors["f7"]} onClick={() => handleButtonClick('F7')}/>
-                            <ButtonKey text="f8"  isHighlighted={buttonColors["f8"]} onClick={() => handleButtonClick('F8')}/>
-                            <ButtonKey text="F9"  isHighlighted={buttonColors["f9"]} onClick={() => handleButtonClick('F9')}/>
-                            <ButtonKey text="\ |" isHighlighted={buttonColors["|"]} onClick={() => handleButtonClick('|')}/>
-
+                            {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
+                              <ButtonKey
+                                key={key}
+                                text={key}
+                                isHighlighted={buttonColors[key.toLowerCase()]}
+                                onClick={() => handleButtonClick(key.toUpperCase())}
+                                />
+                              ))}                    
                         </div>
 
   
                         {/* druhá řada znaků ; - DELETE*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text=";" isHighlighted={buttonColors[";"]} onClick={() => handleButtonClick(';')}/>
-                            <ButtonKey text="1" isHighlighted={buttonColors["1"]} onClick={() => handleButtonClick('1' || '+')}/>
-                            <ButtonKey text="2" isHighlighted={buttonColors["2"]} onClick={() => handleButtonClick('2' || 'ě')}/>
-                            <ButtonKey text="3" isHighlighted={buttonColors["3"]} onClick={() => handleButtonClick('3' || 'š')}/>
-                            <ButtonKey text="4" isHighlighted={buttonColors["4"]} onClick={() => handleButtonClick('4' || 'č')}/>
-                            <ButtonKey text="5" isHighlighted={buttonColors["5"]} onClick={() => handleButtonClick('5' || 'ř')}/>
-                            <ButtonKey text="6" isHighlighted={buttonColors["6"]} onClick={() => handleButtonClick('6' || 'ž')}/>
-                            <ButtonKey text="7" isHighlighted={buttonColors["7"]} onClick={() => handleButtonClick('7' || 'ý')}/>
-                            <ButtonKey text="8" isHighlighted={buttonColors["8"]} onClick={() => handleButtonClick('8' || 'á')}/>
-                            <ButtonKey text="9" isHighlighted={buttonColors["9"]} onClick={() => handleButtonClick('9' || 'í')}/>
-                            <ButtonKey text="10" isHighlighted={buttonColors["0"]} onClick={() => handleButtonClick('0')}/>
-                            <ButtonKey text="delete" isHighlighted={buttonColors["backspace"]} onClick={() => handleButtonClick('DELETE')}/>
+                          {[";", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace"].map((key) => (
+                            <ButtonKey
+                            key={key}
+                            text={key}
+                            isHighlighted={buttonColors[key.toLowerCase()]}
+                            onClick={() => handleButtonClick(key.toUpperCase())}
+                          />
+                        ))}                    
                         </div>
 
                         {/* Třetí řada znaků TAB - ENTER*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="Tab" isHighlighted={buttonColors["tab"]} onClick={() => handleButtonClick('TAB')}/>
-                            <ButtonKey text="Q" isHighlighted={buttonColors["q"]} onClick={() => handleButtonClick('Q')}/>
-                            <ButtonKey text="W" isHighlighted={buttonColors["w"]} onClick={() => handleButtonClick('W')}/>
-                            <ButtonKey text="E" isHighlighted={buttonColors["e"]} onClick={() => handleButtonClick('E')}/>
-                            <ButtonKey text="r" isHighlighted={buttonColors["r"]} onClick={() => handleButtonClick('R')}/>
-                            <ButtonKey text="t" isHighlighted={buttonColors["t"]} onClick={() => handleButtonClick('T')}/>
-                            <ButtonKey text="z" isHighlighted={buttonColors["z"]} onClick={() => handleButtonClick('Z')}/>
-                            <ButtonKey text="u" isHighlighted={buttonColors["u"]} onClick={() => handleButtonClick('U')}/>
-                            <ButtonKey text="i" isHighlighted={buttonColors["i"]} onClick={() => handleButtonClick('I')}/>
-                            <ButtonKey text="o" isHighlighted={buttonColors["o"]} onClick={() => handleButtonClick('O')}/>
-                            <ButtonKey text="p" isHighlighted={buttonColors["p"]} onClick={() => handleButtonClick('P')}/>
-                            <ButtonKey text="ent" isHighlighted={buttonColors["enter"]} onClick={() => handleButtonClick('ENTER')}/>
+                          {["Tab", "Q", "W", "E", "R", "T", "Z", "U", "I", "O", "P", "Enter"].map((key) => (
+                            <ButtonKey
+                              key={key}
+                              text={key}
+                              isHighlighted={buttonColors[key.toLowerCase()]}
+                              onClick={() => handleButtonClick(key.toUpperCase())}
+                            />
+                          ))}
                         </div>
 
                       
-                        {/* Čtvrtá řadu znaků CAPS - AC */}
+                        {/* Čtvrtá řadu znaků CAPS - AC */}   
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="caps" isHighlighted={buttonColors["capslock"]} onClick={() => handleButtonClick('CAPS LOCK')}/>
-                            <ButtonKey text="a" isHighlighted={buttonColors["a"]} onClick={() => handleButtonClick('A')}/>
-                            <ButtonKey text="s" isHighlighted={buttonColors["s"]} onClick={() => handleButtonClick('S')}/>
-                            <ButtonKey text="d" isHighlighted={buttonColors["d"]} onClick={() => handleButtonClick('D')}/>
-                            <ButtonKey text="f" isHighlighted={buttonColors["f"]} onClick={() => handleButtonClick('F')}/>
-                            <ButtonKey text="g" isHighlighted={buttonColors["g"]} onClick={() => handleButtonClick('G')}/>
-                            <ButtonKey text="h" isHighlighted={buttonColors["h"]} onClick={() => handleButtonClick('H')}/>
-                            <ButtonKey text="j" isHighlighted={buttonColors["j"]} onClick={() => handleButtonClick('J')}/>
-                            <ButtonKey text="k" isHighlighted={buttonColors["k"]} onClick={() => handleButtonClick('K')}/>
-                            <ButtonKey text="l" isHighlighted={buttonColors["l"]} onClick={() => handleButtonClick('L')}/>
-                            <ButtonKey text="ů" isHighlighted={buttonColors["ů"]} onClick={() => handleButtonClick('Ů')}/>
-                            <ButtonKey text="AC" isHighlighted={buttonColors["delete"]} onClick={() => handleButtonClick('AC')}/>
+                          {["caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ů", "AC"].map((key) => (
+                            <ButtonKey
+                              key={key}
+                              text={key}
+                              isHighlighted={buttonColors[key.toLowerCase()]}
+                              onClick={() => handleButtonClick(key.toUpperCase())}
+                            />
+                          ))}
                         </div>
+                      
                             
                         {/* Pátá řada znaků CONTROL - <>*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="control" isHighlighted={buttonColors["control"]} onClick={() => handleButtonClick('CONTROL')}/>
-                            <ButtonKey text="y" isHighlighted={buttonColors["y"]} onClick={() => handleButtonClick('Y')}/>
-                            <ButtonKey text="x" isHighlighted={buttonColors["x"]} onClick={() => handleButtonClick('X')}/>
-                            <ButtonKey text="c" isHighlighted={buttonColors["c"]} onClick={() => handleButtonClick('C')}/>
-                            <ButtonKey text="v" isHighlighted={buttonColors["v"]} onClick={() => handleButtonClick('V')}/>
-                            <ButtonKey text="b" isHighlighted={buttonColors["b"]} onClick={() => handleButtonClick('B')}/>
-                            <ButtonKey text="n" isHighlighted={buttonColors["n"]} onClick={() => handleButtonClick('N')}/>
-                            <ButtonKey text="m" isHighlighted={buttonColors["m"]} onClick={() => handleButtonClick('M')}/>
-                            <ButtonKey text="?" isHighlighted={buttonColors["?"]} onClick={() => handleButtonClick('?')}/>
-                            <ButtonKey text="alt" isHighlighted={buttonColors["alt"]} onClick={() => handleButtonClick('ALT')}/>
-                            <ButtonKey text="<>" isHighlighted={buttonColors["<"]} onClick={() => handleButtonClick('<')}/>
-                        </div>   
+                          {["control", "y", "x", "c", "v", "b", "n", "m", "?", "alt", "<"].map((key) => (
+                            <ButtonKey
+                              key={key}
+                              text={key}
+                              isHighlighted={buttonColors[key.toLowerCase()]}
+                              onClick={() => handleButtonClick(key.toUpperCase())}
+                            />
+                          ))}
+                        </div>
 
                         {/* Poslední řada znaků FN - OPTION*/}
                         <div className="flex flex-row gap-2">
