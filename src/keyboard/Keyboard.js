@@ -3,6 +3,8 @@ import DisplayKey from "../displayKey/DisplayKey";
 import ButtonKey from "../button/ButtonKey";
 
 const Keyboard = () => {
+
+
     return (
         <div>
             <DisplayKey/>
@@ -11,7 +13,7 @@ const Keyboard = () => {
 
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="esc" />
+                            <ButtonKey text="esc"/>
                             <ButtonKey text="f1" />
                             <ButtonKey text="f2" />
                             <ButtonKey text="f3" />
