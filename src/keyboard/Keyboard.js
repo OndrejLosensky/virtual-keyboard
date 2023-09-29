@@ -1,27 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ButtonKey from "../button/ButtonKey";
-
+import DisplayKey from "../displayKey/DisplayKey";
 
 const Keyboard = () => {
 
-    const [pressedKey, setPressedKey] = useState('');
-  
-    useEffect(() => {
-      const handleKeyPress = (event) => {
-        setPressedKey(event.key);
-      };
-  
-      window.addEventListener('keydown', handleKeyPress);
-  
-      return () => {
-        window.removeEventListener('keydown', handleKeyPress);
-      };
-    }, []);
+   
 
 
     return (
         <div>
-            <h2 className="text-foreColorWhite text-3xl flex justify-center items-center pt-4"> Právě jsi zmáčkl klávesu... {pressedKey}</h2>
+                <DisplayKey/>
                 <div className="flex justify-center items-center h-screen">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
 
