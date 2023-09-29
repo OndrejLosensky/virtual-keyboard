@@ -6,10 +6,13 @@ const Keyboard = () => {
 
   const [x, setX] = useState('');
 
-  const handleButtonClick = (newValue) => {
+  const handleButtonClick = (newValue, buttonText) => {
     setX(newValue);
+    setClickedKeys([...clickedKeys, buttonText]);
   };
 
+
+  const [clickedKeys, setClickedKeys] = useState([]);
 
   // Funkce pro zvýraznění klávesy, která je stisklá
   const [buttonColors, setButtonColors] = useState({});
@@ -43,13 +46,19 @@ const Keyboard = () => {
     }, []);
 
 
+
+   
+
+
+
     return (
         <div>
             <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
             
              {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
             <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-lg"> Poslední kliknuté tlačítko: "{x}"  </h3>
-                
+    
+
                 
                 <div className="flex justify-center items-center h-screen">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
@@ -105,7 +114,7 @@ const Keyboard = () => {
                             <ButtonKey text="ent" isHighlighted={buttonColors["enter"]} onClick={() => handleButtonClick('ENTER')}/>
                         </div>
 
-
+                      
                         {/* Čtvrtá řadu znaků CAPS - AC */}
                         <div className="flex flex-row gap-2">
                             <ButtonKey text="caps" isHighlighted={buttonColors["capslock"]} onClick={() => handleButtonClick('CAPS LOCK')}/>
