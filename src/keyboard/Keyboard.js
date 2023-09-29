@@ -48,8 +48,8 @@ const Keyboard = () => {
     return (
         <div>
           
-                <div className="flex justify-start h-screen pt-16 px-28">
-                    <div className=" h-[45%] w-[48%] flex flex-col gap-2" >
+                <div className="flex justify-start h-screen pt-16 px-24  items-center">
+                    <div className=" h-[45%] w-[65%] flex flex-col gap-2 " >
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
