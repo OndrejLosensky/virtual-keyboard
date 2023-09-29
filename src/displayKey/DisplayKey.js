@@ -21,7 +21,7 @@ const DisplayKey = () => {
             <h2 className="text-foreColorWhite text-xl flex justify-center items-center pt-4 uppercase">
                  Zmáčkl jsi klávesu: " {pressedKey} "
             </h2>
-            <div className="border-b-2 border-foreColorWhite w-[30%] pt-2">
+            <div className="border-b-2 border-foreColorWhite w-[100%] pt-2">
 
             </div>
         </div>
