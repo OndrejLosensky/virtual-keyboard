@@ -9,6 +9,7 @@ module.exports = {
       backColor: "#1f212c",
       foreColorWhite: "#fefefe",
       foreColorBlue: "#96d2f1",
+      foreColorRed: "#eb7673",
       },
   },
   plugins: [],
