@@ -6,7 +6,7 @@ const Keyboard = () => {
         <div className="flex justify-center items-center h-screen">
                 <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
 
-
+                    {/* Vrchní řada znaků ESC - F9*/}
                     <div className="flex flex-row gap-2">
                         <ButtonKey text="esc"/>
                         <ButtonKey text="f1"/>
@@ -21,7 +21,7 @@ const Keyboard = () => {
                         <ButtonKey text="\ |"/>
                     </div>
 
-
+                    {/* druhá řada znaků ; - DELETE*/}
                     <div className="flex flex-row gap-2">
                         <ButtonKey text=";"/>
                         <ButtonKey text="1"/>
@@ -37,6 +37,7 @@ const Keyboard = () => {
                         <ButtonKey text="delete"/>
                     </div>
 
+                    {/* Třetí řada znaků TAB - ENTER*/}
                     <div className="flex flex-row gap-2">
                         <ButtonKey text="Tab"/>
                         <ButtonKey text="Q"/>
@@ -52,6 +53,8 @@ const Keyboard = () => {
                         <ButtonKey text="ent"/>
                     </div>
 
+
+                    {/* Čtvrtá řadu znaků CAPS - AC */}
                     <div className="flex flex-row gap-2">
                         <ButtonKey text="caps"/>
                         <ButtonKey text="a"/>
@@ -67,6 +70,7 @@ const Keyboard = () => {
                         <ButtonKey text="AC"/>
                     </div>
                         
+                    {/* Pátá řada znaků CONTROL - <>*/}
                     <div className="flex flex-row gap-2">
                         <ButtonKey text="control"/>
                         <ButtonKey text="y"/>
@@ -79,9 +83,14 @@ const Keyboard = () => {
                         <ButtonKey text="?"/>
                         <ButtonKey text="alt"/>
                         <ButtonKey text="<>"/>
-                    </div>        
-                    </div>
-                            </div>
+                    </div>   
+
+                     {/* Poslední řada znaků FN - OPTION*/}
+                    <div className="flex flex-row gap-2">
+                    </div>     
+
+                </div>
+            </div>
                         
        
     
