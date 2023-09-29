@@ -1,9 +1,8 @@
 import React from "react";
-import ButtonKey from "../button/ButtonKey";
 import DisplayKey from "../displayKey/DisplayKey";
+import ButtonKey from "../button/ButtonKey";
 
 const Keyboard = () => {
-
     return (
         <div>
             <DisplayKey/>
@@ -12,19 +11,20 @@ const Keyboard = () => {
 
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
-                            <ButtonKey text="esc"/>
-                            <ButtonKey text="f1"/>
-                            <ButtonKey text="f2"/>
-                            <ButtonKey text="f3"/>
-                            <ButtonKey text="f4"/>
-                            <ButtonKey text="f5"/>
-                            <ButtonKey text="f6"/>
-                            <ButtonKey text="f7"/>
-                            <ButtonKey text="f8"/>
-                            <ButtonKey text="F9"/>
-                            <ButtonKey text="\ |"/>
+                            <ButtonKey text="esc" />
+                            <ButtonKey text="f1" />
+                            <ButtonKey text="f2" />
+                            <ButtonKey text="f3" />
+                            <ButtonKey text="f4" />
+                            <ButtonKey text="f5" />
+                            <ButtonKey text="f6" />
+                            <ButtonKey text="f7" />
+                            <ButtonKey text="f8" />
+                            <ButtonKey text="F9" />
+                            <ButtonKey text="\ |" />
                         </div>
 
+                     
                         {/* druhá řada znaků ; - DELETE*/}
                         <div className="flex flex-row gap-2">
                             <ButtonKey text=";"/>
