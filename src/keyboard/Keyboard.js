@@ -4,12 +4,9 @@ import DisplayKey from "../displayKey/DisplayKey";
 
 const Keyboard = () => {
 
-   
-
-
     return (
         <div>
-                <DisplayKey/>
+            <DisplayKey/>
                 <div className="flex justify-center items-center h-screen">
                     <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
 
