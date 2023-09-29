@@ -56,12 +56,12 @@ const Keyboard = () => {
             <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
             
              {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-lg"> Poslední kliknuté tlačítko: "{x}"  </h3>
+            <h3 className="text-foreColorWhite flex justify-center items-center pt-2 text-sm"> Poslední kliknuté tlačítko: "{x}"  </h3>
     
 
                 
                 <div className="flex justify-center items-center h-screen">
-                    <div className=" h-[45%] w-[48%] flex flex-col gap-2 bg-foreColorBlue" >
+                    <div className=" h-[45%] w-[48%] flex flex-col gap-2" >
 
                      
 
