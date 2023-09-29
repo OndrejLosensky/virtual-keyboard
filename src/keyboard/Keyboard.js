@@ -118,7 +118,7 @@ const Keyboard = () => {
                             
                         </div>     
                     </div>    
-                    <div className="px-24 mx-auto"> 
+                    <div className="px-24 py-12 mx-auto"> 
                       <div className="flex flex-col"> 
                         <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
                           {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
