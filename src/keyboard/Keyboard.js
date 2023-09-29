@@ -11,11 +11,12 @@ const Keyboard = () => {
   };
 
 
+  // Funkce pro zvýraznění klávesy, která je stisklá
   const [buttonColors, setButtonColors] = useState({});
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Update the buttonColors state based on the pressed key
+      // Změní barvu tlačítka, podle toho která klávesa je stisklá 
       const key = e.key.toLowerCase();
       setButtonColors((prevColors) => ({
         ...prevColors,
@@ -23,7 +24,7 @@ const Keyboard = () => {
       }));
     };
     const handleKeyUp = (e) => {
-        // Reset the buttonColors state when the key is released
+        // Resetuje barvu jakmile se klávesa pustí
         const key = e.key.toLowerCase();
         setButtonColors((prevColors) => ({
           ...prevColors,
@@ -35,7 +36,7 @@ const Keyboard = () => {
       window.addEventListener("keyup", handleKeyUp);
   
       return () => {
-        // Remove the event listeners when the component unmounts
+        // odstraní EventListener jakmile je klávesa puštěna
         window.removeEventListener("keydown", handleKeyDown);
         window.removeEventListener("keyup", handleKeyUp);
       };
