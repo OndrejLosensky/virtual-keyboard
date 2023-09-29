@@ -61,7 +61,7 @@ const Keyboard = () => {
 
                 
                 <div className="flex justify-center items-center h-screen">
-                    <div className=" h-[45%] w-[48%] flex flex-col gap-2 " >
+                    <div className=" h-[45%] w-[48%] flex flex-col gap-2 bg-foreColorBlue" >
 
                      
 
@@ -85,15 +85,15 @@ const Keyboard = () => {
                         {/* druhá řada znaků ; - DELETE*/}
                         <div className="flex flex-row gap-2">
                             <ButtonKey text=";" isHighlighted={buttonColors[";"]} onClick={() => handleButtonClick(';')}/>
-                            <ButtonKey text="1" isHighlighted={buttonColors["1"]} onClick={() => handleButtonClick('1')}/>
-                            <ButtonKey text="2" isHighlighted={buttonColors["2"]} onClick={() => handleButtonClick('2')}/>
-                            <ButtonKey text="3" isHighlighted={buttonColors["3"]} onClick={() => handleButtonClick('3')}/>
-                            <ButtonKey text="4" isHighlighted={buttonColors["4"]} onClick={() => handleButtonClick('4')}/>
-                            <ButtonKey text="5" isHighlighted={buttonColors["5"]} onClick={() => handleButtonClick('5')}/>
-                            <ButtonKey text="6" isHighlighted={buttonColors["6"]} onClick={() => handleButtonClick('6')}/>
-                            <ButtonKey text="7" isHighlighted={buttonColors["7"]} onClick={() => handleButtonClick('7')}/>
-                            <ButtonKey text="8" isHighlighted={buttonColors["8"]} onClick={() => handleButtonClick('8')}/>
-                            <ButtonKey text="9" isHighlighted={buttonColors["9"]} onClick={() => handleButtonClick('9')}/>
+                            <ButtonKey text="1" isHighlighted={buttonColors["1"]} onClick={() => handleButtonClick('1' || '+')}/>
+                            <ButtonKey text="2" isHighlighted={buttonColors["2"]} onClick={() => handleButtonClick('2' || 'ě')}/>
+                            <ButtonKey text="3" isHighlighted={buttonColors["3"]} onClick={() => handleButtonClick('3' || 'š')}/>
+                            <ButtonKey text="4" isHighlighted={buttonColors["4"]} onClick={() => handleButtonClick('4' || 'č')}/>
+                            <ButtonKey text="5" isHighlighted={buttonColors["5"]} onClick={() => handleButtonClick('5' || 'ř')}/>
+                            <ButtonKey text="6" isHighlighted={buttonColors["6"]} onClick={() => handleButtonClick('6' || 'ž')}/>
+                            <ButtonKey text="7" isHighlighted={buttonColors["7"]} onClick={() => handleButtonClick('7' || 'ý')}/>
+                            <ButtonKey text="8" isHighlighted={buttonColors["8"]} onClick={() => handleButtonClick('8' || 'á')}/>
+                            <ButtonKey text="9" isHighlighted={buttonColors["9"]} onClick={() => handleButtonClick('9' || 'í')}/>
                             <ButtonKey text="10" isHighlighted={buttonColors["0"]} onClick={() => handleButtonClick('0')}/>
                             <ButtonKey text="delete" isHighlighted={buttonColors["backspace"]} onClick={() => handleButtonClick('DELETE')}/>
                         </div>

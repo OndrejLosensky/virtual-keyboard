@@ -18,8 +18,8 @@ const Header = () => {
             </div>
             */}
 
-            <div className="w-[100%] h-[80px] border-b-[1px] border-b-foreColorWhite  flex items-center">
-                <h1 className="w-full uppercase text-4xl text-center py-4 font-semiBold text-foreColorWhite">
+            <div className="w-[100%] h-[60px] border-b-[1px] border-b-foreColorWhite  flex items-center">
+                <h1 className="w-full uppercase text-4xl text-center py-6 font-bold text-foreColorWhite">
                     Virtuální klávesnice
                 </h1>
             </div>
