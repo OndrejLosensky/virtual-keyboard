@@ -13,13 +13,25 @@ const Keyboard = () => {
   const [inputValue, setInputValue] = useState('');
 
   const handlePhysicalKeyboardInput = (e) => {
-    setInputValue((prevValue) => prevValue + e.key);
+    if (e.key === "Backspace") {
+      // smaže poslední přidaný charakter
+      setInputValue((prevValue) => prevValue.slice(0, -1));
+    } else {
+      // řeší ostatní klávesy na fyzické klávesnici
+      setInputValue((prevValue) => prevValue + e.key);
+    }
   };
 
   const handleButtonClick = (newValue, buttonText) => {
-    setX(newValue);
-    setClickedKeys([...clickedKeys, buttonText]);
-    setInputValue(inputValue + newValue);
+    if (newValue === "BACKSPACE") {
+      // smaže poslední přidaný charakter nebo znak
+      setInputValue((prevValue) => prevValue.slice(0, -1));
+    } else {
+      // řeší ostatní tlačítka na virtuální klávesnici
+      setX(newValue);
+      setClickedKeys([...clickedKeys, buttonText]);
+      setInputValue(inputValue + newValue);
+    }
   };
 
   const logKeyPressed = (key) => {
@@ -47,7 +59,7 @@ const Keyboard = () => {
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
 
-    // Add event listener for physical keyboard input
+    // rozpoznává reálné klávesy od kliknutí na té virtuální
     window.addEventListener("keypress", handlePhysicalKeyboardInput);
 
     return () => {
