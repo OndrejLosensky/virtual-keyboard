@@ -84,7 +84,7 @@ const Keyboard = () => {
   }, []);
 
     return (
-        <div>
+        <div >
 
             <p className="text-foreColorWhite pt-6  text-center text-lg font-thin">
 
@@ -102,7 +102,7 @@ const Keyboard = () => {
 
             <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
 
-                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt- items-start ">
+                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt-48 ">
                  <div className="text-white rounded-lg text-foreColorWhite
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
 
@@ -116,7 +116,8 @@ const Keyboard = () => {
                      
                   </div>  
                 
-                    <div className=" h-[45%] w-[60%] flex flex-col gap-2 px-4 pt-4">
+        
+                    <div className=" h-[45%] w-[100%] flex flex-col items-center text-left gap-2 ">
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
@@ -194,17 +195,19 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                             
                         </div> 
-
-                        </div>    
-                          <div className="px-24 py-12 mx-auto"> 
+                        
+                        </div>  
+                        {/*
+                        <div className="px-24 py-12 mx-auto"> 
                             <div className="flex flex-col"> 
-                              <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+                              <DisplayKey/>
 
-                                {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
+                                
                               <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Virtuální klávesnice </h3>   
                               <p className="text-foreColorWhite text-sm flex justify-center"> "{x}"</p>            
                             </div>  
                           </div>
+                          */}  
                     
                         </div>         
   
