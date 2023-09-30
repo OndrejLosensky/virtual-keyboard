@@ -7,6 +7,11 @@ const ChangeKeyboard = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+
+  const handleClick = () => {
+    alert("tato funkce není momentálně")
+  }
+
   return (
     <div className="relative inline-block text-left">
       <button
@@ -20,12 +25,12 @@ const ChangeKeyboard = () => {
 
           <ul>
             <li>
-              <button className="block w-full py-2 px-4 text-left">
+              <button className="block w-full py-2 px-4 text-left" onClick={handleClick}>
                 Česká [CZ]
               </button>
             </li>
             <li>
-              <button className="block w-full py-2 px-4 text-left">
+              <button className="block w-full py-2 px-4 text-left" onClick={handleClick}>
                 Anglická [ENG]
               </button>
             </li>
