@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DisplayKey from "../displayKey/DisplayKey";
 import ButtonKey from "../button/ButtonKey";
+import InputKeyboard from "../inputKeyboard/InputKeyboard";
 
 const Keyboard = () => {
 
@@ -47,7 +48,10 @@ const Keyboard = () => {
 
     return (
         <div>
-          
+
+            <InputKeyboard/>
+
+              
                 <div className="flex justify-start h-screen tablet:pt-8 tablet:px-16 laptop:px-32 laptop:pt-16 bigScreen:px-80 bigScreen:pt-32 items-center ">
                     <div className=" h-[45%] w-[65%] flex flex-col gap-2 " >
                         {/* Vrchní řada znaků ESC - F9*/}
