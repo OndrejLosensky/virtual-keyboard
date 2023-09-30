@@ -5,7 +5,6 @@ const InputKeyboard = () => {
     const inputRef = useRef(null);
 
     useEffect(() => {
-        // Focus the input element when the component mounts
         inputRef.current.focus();
     }, []);
 
