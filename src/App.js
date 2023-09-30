@@ -1,5 +1,5 @@
-import Header from "../src/header/Header"
-import Keyboard from "./keyboard/Keyboard";
+import Header from "./components/header/Header";
+import Keyboard from "./components/keyboard/Keyboard";
 import backgroundImage from "./assets/backgroundImage.png"
 function App() {
   return (

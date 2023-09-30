@@ -4,7 +4,7 @@ import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
-import refreshIcon from "../assets/refreshIcon.png"
+import refreshIcon from "../../assets/refreshIcon.png"
 
 
 const Keyboard = () => {

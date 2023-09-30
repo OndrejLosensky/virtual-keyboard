@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import appleIcon from "../assets/appleIcon.png";
-import windowsIcon from "../assets/windowsIcon.png";
+import appleIcon from "../../assets/appleIcon.png"
+import windowsIcon from "../../assets/windowsIcon.png"
 
 const ChangeOSKeyboard = () => {
   // useState pro rozpoznání aktuální ikony
