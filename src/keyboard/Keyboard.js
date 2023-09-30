@@ -135,7 +135,7 @@ const Keyboard = () => {
                         <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
 
                           {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Poslední kliknuté tlačítko: </h3>   
+                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Virtuální klávesnice </h3>   
                           <p className="text-foreColorWhite text-sm flex justify-center"> "{x}"</p>            
                       </div>  
                     </div>
