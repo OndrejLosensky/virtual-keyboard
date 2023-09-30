@@ -8,7 +8,6 @@ function App() {
       backgroundImage: `url(${backgroundImage})`,
     }}>
           <Header/>
-
           <Keyboard/>
     </section>
     
