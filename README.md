@@ -9,11 +9,11 @@ aplikace je v druhé verzi.
 ---------------------------
 _____________________________________________________________________
  přidané věci:
-        + Dropdown tlačítko, kde bude později možnost měnit klávesnici
-        + Input, kde se zobrazuje vámi psaný text
-        + ukazal stisklé klávesy a naposledy stisklého tlačítka se přesunul vedle klávesnice
-        + lepší zobrazování na velkém monitoru
-        + při kliknutí na fyzickou klávesu se rozsvítí tlačítko, které držíte
+        Dropdown tlačítko, kde bude později možnost měnit klávesnici
+        Input, kde se zobrazuje vámi psaný text
+        ukazatel stisklé klávesy a naposledy stisklého tlačítka se přesunul vedle klávesnice
+        lepší zobrazování na velkém monitoru
+        při kliknutí na fyzickou klávesu se rozsvítí tlačítko, které držíte
 
 _____________________________________________________________________
 
