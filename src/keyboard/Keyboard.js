@@ -12,7 +12,6 @@ const Keyboard = () => {
     setClickedKeys([...clickedKeys, buttonText]);
   };
 
-
   const [clickedKeys, setClickedKeys] = useState([]);
 
   // Funkce pro zvýraznění klávesy, která je stisklá
@@ -53,7 +52,13 @@ const Keyboard = () => {
 
               
                 <div className="flex justify-start h-screen tablet:pt-4 tablet:px-16 laptop:px-32 laptop:pt-8 bigScreen:px-80 bigScreen:pt-16 items-center ">
-                    <div className=" h-[45%] w-[65%] flex flex-col gap-2 " >
+                  <button
+                    className="text-white py-2 px-4 rounded-lg border-[2px] text-foreColorWhite
+                     border-foreColorWhite absolute left-0 top-0 mt-4 ml-8 hover:-translate-y-1 hover:duration-300"
+                  >
+                    Změnit klávesnici
+                  </button>
+                    <div className=" h-[45%] w-[65%] flex flex-col gap-2 px-4 pt-4">
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
