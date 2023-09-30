@@ -19,8 +19,8 @@ const DisplayKey = () => {
     return (
         <div className="flex flex-col justify-center items-center pt-8">
           <div className="flex flex-row">
-              <h3 className="text-foreColorWhite pr-8 text-sm"> poslední stisklá klávesa</h3>
-              <p className="text-lg text-foreColorWhite pb-2 uppercase"> "{pressedKey}" </p>
+              <h3 className="text-foreColorWhite pr-20 text-sm"> poslední stisklá klávesa</h3>
+              <p className="text-lg text-foreColorWhite pb-2 uppercase text-right"> "{pressedKey}" </p>
           </div>
           
            
