@@ -53,7 +53,7 @@ const Keyboard = () => {
             <InputKeyboard/>
               
               
-                <div className="flex justify-start h-screen tablet:pt-4 tablet:px-16 laptop:px-32 laptop:pt-8 bigScreen:px-80 bigScreen:pt-16 items-center ">
+                <div className="flex justify-start h-screen tablet:pt-16 tablet:px-16 laptop:pt-32 laptop:px-32 bigScreen:px-80 bigScreen:pt-64 items-start ">
                   
                  <div className="text-white rounded-lg border-[2px] text-foreColorWhite
                      border-foreColorWhite absolute left-0 top-0 ml-8 mt-4">
@@ -61,7 +61,7 @@ const Keyboard = () => {
                   </div>
                 
                   
-                    <div className=" h-[45%] w-[65%] flex flex-col gap-2 px-4 pt-4">
+                    <div className=" h-[45%] w-[60%] flex flex-col gap-2 px-4 pt-4">
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
@@ -133,8 +133,9 @@ const Keyboard = () => {
                     <div className="px-24 py-12 mx-auto"> 
                       <div className="flex flex-col"> 
                         <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+
                           {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-2 text-md"> Poslední kliknuté tlačítko: </h3>   
+                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Poslední kliknuté tlačítko: </h3>   
                           <p className="text-foreColorWhite text-sm flex justify-center"> "{x}"</p>            
                       </div>  
                     </div>
