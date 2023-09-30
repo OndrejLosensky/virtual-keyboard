@@ -4,7 +4,7 @@ import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
-
+import refreshIcon from "../assets/refreshIcon.png"
 
 const Keyboard = () => {
 
@@ -94,6 +94,11 @@ const Keyboard = () => {
               kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
 
             </p>
+
+              {/*přidání tlačítka, které vždy obnoví stránku po kliknutí na něj*/}
+            <div className="absolute top-0 right-0 mr-8 mt-6 cursor-pointer ">
+              <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
+            </div>
 
             <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
 
