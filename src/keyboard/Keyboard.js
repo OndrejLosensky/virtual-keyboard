@@ -52,7 +52,7 @@ const Keyboard = () => {
             <InputKeyboard/>
 
               
-                <div className="flex justify-start h-screen tablet:pt-8 tablet:px-16 laptop:px-32 laptop:pt-16 bigScreen:px-80 bigScreen:pt-32 items-center ">
+                <div className="flex justify-start h-screen tablet:pt-4 tablet:px-16 laptop:px-32 laptop:pt-8 bigScreen:px-80 bigScreen:pt-16 items-center ">
                     <div className=" h-[45%] w-[65%] flex flex-col gap-2 " >
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
