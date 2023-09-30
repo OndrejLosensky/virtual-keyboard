@@ -4,8 +4,16 @@ je vytvořena pomocí Reactu a na místo klasického stylování CSS je použit 
 
 Aplikace zaznamenává jakou klávesu stisknu na té fyzické a zobrazuje to na displeji,
 dále také lze klikat na jednotlivá tlačítka, a ty vypíšou, které bylo stisknuté.
+PRVNÍ VERZE: 29.9.2023
+---------------------------
+_________________________________
+    zahájení aplikace
+        první zobrazení virtuální klávesnice
+        přidání nadpisu
+        přidání ukazatele naposledy stisklé klávesy fyzické i té virtuální
+_________________________________
 
-DRUHÁ VERZE APLIKACE
+DRUHÁ VERZE: 29.9.2023
 ---------------------------
 _____________________________________________________________________
     přidané věci:
@@ -17,15 +25,31 @@ _____________________________________________________________________
 
 _____________________________________________________________________
 
-TŘETÍ NÁSLEDUJÍCÍ VERZE OBSAHUJE:
+TŘETÍ VERZE: 30.9.2023
 ---------------------------------------
 ______________________________________________________________________
-    V třetí verzi bych chtěl aby bylo možné:
+    přidané funkce do třetí verze:
+        tlačítko pro obnovení stránky
+        tlačítko pro změnu jazyku klávesnice
+        tlačítko pro změnu systémové klávesnice
+        popisek s odkazem na test (zobrazí všechny klávesy zeléné když fungují)
+        pole, kde se zobrazuje vstup z klávesnice a i zároveň z té virtuální
+
+        - nefunguje mazat věci z input okýnka pomocí fyzické klávesy, funguje jen backspace na té virtuální
+        - zobrazování výstupů klávesnice se překrívá s popiskem 
+        - tlačítka jsou zatím pouze grafická
+        - na klávesnici nejsou všechny znaky z klávesnice, a nezobrazuje se ideálně
+
+________________________________________________________________________
+
+
+DO BUDOUCNA:
+___________________________________________________________________
         zapisovat do nějakého souboru nebo proměnné, která by se zobrazila
         vytvořit funkci, která udělá test zda vaše klávesnice funguje v pořádku
         přepínání tmavého a světlého režimu
         možnost zaznamenávat každé stisknuté tlačítko do logu 
+____________________________________________________________________
 
-________________________________________________________________________
 Aplikace je vytvořena mnou.
 dne 29.9.2023
