@@ -8,6 +8,14 @@ const Header = () => {
                     Virtuální klávesnice
                 </h1>
             </div>
+            <div>
+                <p className="text-foreColorWhite pt-6 flex justify-center text-center text-lg font-thin">
+
+                    Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
+                    a také obsahuje funkci pro otestování funkčnosti vaší klávesnice <br/>
+                    klávesnice je dostupná v českém rozložení a anglickém a ve verzích na Mac a Windows
+                </p>
+            </div>
        </div>
         
     )

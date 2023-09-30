@@ -18,7 +18,7 @@ const Keyboard = () => {
 
    // Funkce, která loguje každou stisklou klávesu
    const logKeyPressed = (key) => {
-    
+
     console.log(`Stisknutá klávesa: ${key}`);
 
     };
@@ -54,12 +54,8 @@ const Keyboard = () => {
 
     return (
         <div>
-         
             <InputKeyboard/>
-              
-              
                 <div className="flex justify-start h-screen tablet:pt-16 tablet:px-16 laptop:pt-32 laptop:px-32 bigScreen:px-80 bigScreen:pt-64 items-start ">
-                  
                  <div className="text-white rounded-lg border-[2px] text-foreColorWhite
                      border-foreColorWhite absolute left-0 top-0 ml-8 mt-4">
                       <ChangeKeyboard/>
