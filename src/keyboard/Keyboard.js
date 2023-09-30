@@ -10,23 +10,24 @@ const Keyboard = () => {
   const [x, setX] = useState('');
   const [clickedKeys, setClickedKeys] = useState([]);
   const [buttonColors, setButtonColors] = useState({});
+  const [inputValue, setInputValue] = useState('');
 
+  const handlePhysicalKeyboardInput = (e) => {
+    setInputValue((prevValue) => prevValue + e.key);
+  };
 
   const handleButtonClick = (newValue, buttonText) => {
     setX(newValue);
     setClickedKeys([...clickedKeys, buttonText]);
+    setInputValue(inputValue + newValue);
   };
 
-   // Funkce, která loguje každou stisklou klávesu
-   const logKeyPressed = (key) => {
-
+  const logKeyPressed = (key) => {
     console.log(`Stisknutá klávesa: ${key}`);
-
-    };
+  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Změní barvu tlačítka, podle toho která klávesa je stisklá 
       const key = e.key.toLowerCase();
       setButtonColors((prevColors) => ({
         ...prevColors,
@@ -34,28 +35,31 @@ const Keyboard = () => {
       }));
       logKeyPressed(key);
     };
+
     const handleKeyUp = (e) => {
-        // Resetuje barvu jakmile se klávesa pustí
-        const key = e.key.toLowerCase();
-        setButtonColors((prevColors) => ({
-          ...prevColors,
-          [key]: false,
-        }));
-      };
-  
-      window.addEventListener("keydown", handleKeyDown);
-      window.addEventListener("keyup", handleKeyUp);
-  
-      return () => {
-        // odstraní EventListener jakmile je klávesa puštěna
-        window.removeEventListener("keydown", handleKeyDown);
-        window.removeEventListener("keyup", handleKeyUp);
-      };
-    }, []);
+      const key = e.key.toLowerCase();
+      setButtonColors((prevColors) => ({
+        ...prevColors,
+        [key]: false,
+      }));
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+
+    // Add event listener for physical keyboard input
+    window.addEventListener("keypress", handlePhysicalKeyboardInput);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
+      window.removeEventListener("keypress", handlePhysicalKeyboardInput);
+    };
+  }, []);
 
     return (
         <div>
-            <InputKeyboard/>
+            <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
                 <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt- items-start ">
                  <div className="text-white rounded-lg text-foreColorWhite
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
