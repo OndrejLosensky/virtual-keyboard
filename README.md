@@ -40,7 +40,10 @@ ______________________________________________________________________
         - tlačítka jsou zatím pouze grafická
         - na klávesnici nejsou všechny znaky z klávesnice, a nezobrazuje se ideálně
 
-________________________________________________________________________
+
+UPDATE:
+    Backspace na fyzické klávesnici funguje!!!!
+__________________________________________________________________________
 
 
 DO BUDOUCNA:
