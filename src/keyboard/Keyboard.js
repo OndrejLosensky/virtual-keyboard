@@ -139,19 +139,20 @@ const Keyboard = () => {
                         {/* Poslední řada znaků FN - OPTION*/}
                         <div className="flex flex-row gap-2">
                             
-                        </div>     
-                    </div>    
-                    <div className="px-24 py-12 mx-auto"> 
-                      <div className="flex flex-col"> 
-                        <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+                        </div> 
 
-                          {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
-                          <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Virtuální klávesnice </h3>   
-                          <p className="text-foreColorWhite text-sm flex justify-center"> "{x}"</p>            
-                      </div>  
-                    </div>
+                        </div>    
+                          <div className="px-24 py-12 mx-auto"> 
+                            <div className="flex flex-col"> 
+                              <DisplayKey/> {/*Zobrazuje zmačknuté klávesy na fyzické klávesnice*/}
+
+                                {/*Zobrazuje sktisknuté tlačítka na té virtuální*/}
+                              <h3 className="text-foreColorWhite flex justify-center sm:font-light items-center pt-1 pb-2 text-md uppercase"> Virtuální klávesnice </h3>   
+                              <p className="text-foreColorWhite text-sm flex justify-center"> "{x}"</p>            
+                            </div>  
+                          </div>
                     
-              </div>         
+                        </div>         
   
         </div>            
     )
