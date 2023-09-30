@@ -18,7 +18,7 @@ const DisplayKey = () => {
 
     return (
         <div className="flex flex-col justify-center items-center pt-8">
-           <p className="text-lg text-foreColorWhite pb-2"> "{pressedKey}" </p>
+           <p className="text-2xl text-foreColorWhite pb-2"> "{pressedKey}" </p>
             <h2 className="text-foreColorWhite text-xl flex justify-center items-center uppercase pb-1 flex-row">
                  Fyzická klávesnice
             </h2>
