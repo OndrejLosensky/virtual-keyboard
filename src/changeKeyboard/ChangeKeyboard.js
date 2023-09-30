@@ -21,12 +21,12 @@ const ChangeKeyboard = () => {
           <ul>
             <li>
               <button className="block w-full py-2 px-4 text-left">
-                Česká
+                Česká [CZ]
               </button>
             </li>
             <li>
               <button className="block w-full py-2 px-4 text-left">
-                Anglická
+                Anglická [ENG]
               </button>
             </li>
 
