@@ -5,7 +5,7 @@ je vytvořena pomocí Reactu a na místo klasického stylování CSS je použit 
 Aplikace zaznamenává jakou klávesu stisknu na té fyzické a zobrazuje to na displeji,
 dále také lze klikat na jednotlivá tlačítka, a ty vypíšou, které bylo stisknuté.
 
-aplikace je v druhé verzi.
+DRUHÁ VERZE APLIKACE
 ---------------------------
 _____________________________________________________________________
     přidané věci:
@@ -17,6 +17,8 @@ _____________________________________________________________________
 
 _____________________________________________________________________
 
+TŘETÍ NÁSLEDUJÍCÍ VERZE OBSAHUJE:
+---------------------------------------
 ______________________________________________________________________
     V třetí verzi bych chtěl aby bylo možné:
         zapisovat do nějakého souboru nebo proměnné, která by se zobrazila
