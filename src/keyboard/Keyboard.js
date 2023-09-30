@@ -3,6 +3,7 @@ import DisplayKey from "../displayKey/DisplayKey";
 import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
+import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
 
 const Keyboard = () => {
 
@@ -59,6 +60,7 @@ const Keyboard = () => {
                  <div className="text-white rounded-lg border-[2px] text-foreColorWhite
                      border-foreColorWhite absolute left-0 top-0 ml-8 mt-4">
                       <ChangeKeyboard/>
+                      <ChangeOSKeyboard/>
                   </div>
                 
                   
