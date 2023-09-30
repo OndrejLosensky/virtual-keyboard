@@ -19,7 +19,7 @@ const InputKeyboard = () => {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center items-center text-center pt-12">
+        <div className="flex flex-col justify-center items-center text-center pt-8">
             <input
                 ref={inputRef}
                 type="text"
