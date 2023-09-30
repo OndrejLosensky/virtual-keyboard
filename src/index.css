@@ -9,3 +9,12 @@ body {
     overflow: hidden; /* Prevent scrollbars */
   }
   
+
+/* styles.css (example) */
+body.light-theme {
+   color: aqua;
+}
+
+body.dark-theme {
+  color: red;
+}
