@@ -16,6 +16,7 @@ module.exports = {
       foreColorBlue: "#96d2f1",
       foreColorRed: "#ec5c5e",
       foreColorOrange: "#ea9b22",
+      foreColorGreen: "#44c33c",
       btnbg: "#5f90a0"
       },
   },

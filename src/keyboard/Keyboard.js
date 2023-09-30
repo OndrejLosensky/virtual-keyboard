@@ -5,12 +5,15 @@ import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
 
+
 const Keyboard = () => {
 
   const [x, setX] = useState('');
   const [clickedKeys, setClickedKeys] = useState([]);
   const [buttonColors, setButtonColors] = useState({});
   const [inputValue, setInputValue] = useState('');
+  const [buttonSuccess, setButtonSuccess] = useState({});
+  const [isGreenToggleOn, setIsGreenToggleOn] = useState(false);
 
   const handlePhysicalKeyboardInput = (e) => {
     if (e.key === "Backspace") {
@@ -24,13 +27,24 @@ const Keyboard = () => {
 
   const handleButtonClick = (newValue, buttonText) => {
     if (newValue === "BACKSPACE") {
-      // smaže poslední přidaný charakter nebo znak
       setInputValue((prevValue) => prevValue.slice(0, -1));
     } else {
-      // řeší ostatní tlačítka na virtuální klávesnici
       setX(newValue);
       setClickedKeys([...clickedKeys, buttonText]);
       setInputValue(inputValue + newValue);
+    }
+
+    setButtonSuccess((prevState) => ({
+      ...prevState,
+      [buttonText]: true,
+    }));
+  
+    if (isGreenToggleOn) {
+      // Označí tlačítko zeleně pokud je funkční
+      setButtonSuccess((prevState) => ({
+        ...prevState,
+        [buttonText]: true,
+      }));
     }
   };
 
@@ -86,18 +100,22 @@ const Keyboard = () => {
                      
                   </div>
                
-                
+                  <button onClick={() => setIsGreenToggleOn(!isGreenToggleOn)}>
+                  Toggle Green Buttons
+                  </button>   
                   
                     <div className=" h-[45%] w-[60%] flex flex-col gap-2 px-4 pt-4">
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
                             {["escape", "f1", "f2", "f3", "f4", "f5", "f6","f7", "f8", "f9", "|"].map((key) => (
-                              <ButtonKey
-                                key={key}
-                                text={key}
-                                isHighlighted={buttonColors[key.toLowerCase()]}
-                                onClick={() => handleButtonClick(key.toUpperCase())}
-                                />
+                             <ButtonKey
+                             buttonSuccess={buttonSuccess[key]}
+                             isGreenToggleOn={isGreenToggleOn}
+                             key={key}
+                             text={key}
+                             isHighlighted={buttonColors[key.toLowerCase()]}
+                             onClick={() => handleButtonClick(key.toUpperCase())}
+                           />
                               ))}                    
                         </div>
 
@@ -106,6 +124,8 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                           {[";", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace"].map((key) => (
                             <ButtonKey
+                            buttonSuccess={buttonSuccess[key]}
+                            isGreenToggleOn={isGreenToggleOn}
                             key={key}
                             text={key}
                             isHighlighted={buttonColors[key.toLowerCase()]}
@@ -118,11 +138,13 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                           {["Tab", "Q", "W", "E", "R", "T", "Z", "U", "I", "O", "P", "Enter"].map((key) => (
                             <ButtonKey
-                              key={key}
-                              text={key}
-                              isHighlighted={buttonColors[key.toLowerCase()]}
-                              onClick={() => handleButtonClick(key.toUpperCase())}
-                            />
+                            buttonSuccess={buttonSuccess[key]}
+                            isGreenToggleOn={isGreenToggleOn}
+                            key={key}
+                            text={key}
+                            isHighlighted={buttonColors[key.toLowerCase()]}
+                            onClick={() => handleButtonClick(key.toUpperCase())}
+                          />
                           ))}
                         </div>
 
@@ -131,11 +153,13 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                           {["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ů", "AC"].map((key) => (
                             <ButtonKey
-                              key={key}
-                              text={key}
-                              isHighlighted={buttonColors[key.toLowerCase()]}
-                              onClick={() => handleButtonClick(key.toUpperCase())}
-                            />
+                            buttonSuccess={buttonSuccess[key]}
+                            isGreenToggleOn={isGreenToggleOn}
+                            key={key}
+                            text={key}
+                            isHighlighted={buttonColors[key.toLowerCase()]}
+                            onClick={() => handleButtonClick(key.toUpperCase())}
+                          />
                           ))}
                         </div>
                       
@@ -144,11 +168,13 @@ const Keyboard = () => {
                         <div className="flex flex-row gap-2">
                           {["control", "y", "x", "c", "v", "b", "n", "m", "?", "alt"].map((key) => (
                             <ButtonKey
-                              key={key}
-                              text={key}
-                              isHighlighted={buttonColors[key.toLowerCase()]}
-                              onClick={() => handleButtonClick(key.toUpperCase())}
-                            />
+                            buttonSuccess={buttonSuccess[key]}
+                            isGreenToggleOn={isGreenToggleOn}
+                            key={key}
+                            text={key}
+                            isHighlighted={buttonColors[key.toLowerCase()]}
+                            onClick={() => handleButtonClick(key.toUpperCase())}
+                          />
                           ))}
                         </div>
 

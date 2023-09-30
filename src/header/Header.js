@@ -1,12 +1,8 @@
 import React from "react";
-//import RefreshIcon from "../assets/refreshIcon.png"
+import setIsGreenToggleOn from "../keyboard/Keyboard"
+import isGreenToggleOn from "../keyboard/Keyboard"
 const Header = () => {
 
-   // funkce bude zavolána po kliknutí na "zde"
-   const handleClick = () => {
-
-    alert("Tato funkce momentálně není ještě dostupná");
-  };
 
     return (
         <div className="px-8 pt-2">
@@ -21,7 +17,7 @@ const Header = () => {
                     Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
                     a také obsahuje funkci pro otestování funkčnosti vaší klávesnice <br/>
                     klávesnice je dostupná v českém rozložení a anglickém a ve verzích na Mac a Windows <br/>
-                    kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={handleClick} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
+                    kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
                 </p>
             </div>
        </div>
