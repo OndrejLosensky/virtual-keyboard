@@ -15,6 +15,7 @@ module.exports = {
       foreColorWhite: "#fefefe",
       foreColorBlue: "#96d2f1",
       foreColorRed: "#ec5c5e",
+      foreColorOrange: "#ea9b22",
       },
   },
   plugins: [],
