@@ -23,10 +23,10 @@ const InputKeyboard = () => {
             <input
                 ref={inputRef}
                 type="text"
-                className="text-foreColorWhite outline-none text-2xl bg-backColor py-2"
-                placeholder="Zde se zobrazí psaný text"
+                className="text-foreColorWhite font-normal w-[50%] flex justify-center text-center outline-none text-xl bg-backColor py-2"
+                placeholder="toto je momentálně pro testování"
             />
-            <div className="border-b-2 border-foreColorWhite w-[40%]"></div>
+            <div className="border-b-[1px] border-foreColorWhite w-[50%]"></div>
         </div>
     )
 }
