@@ -3,7 +3,7 @@ import Keyboard from "./keyboard/Keyboard";
 
 function App() {
   return (
-    <section className="w-full h-screen bg-backColor">
+    <section className="w-full h-screen lg:h-full bg-backColor">
           <Header/>
           <Keyboard/>
     </section>
