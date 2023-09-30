@@ -64,7 +64,7 @@ const Keyboard = () => {
                         <ChangeKeyboard/>
                       </div>
                     
-                      <div className="border-[2px] border-foreColorWhite mr-4 rounded-lg">
+                      <div className="mt-1 mr-4 rounded-lg">
                         <ChangeOSKeyboard/>
                       </div>  
                      
