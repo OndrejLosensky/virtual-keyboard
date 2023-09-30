@@ -57,11 +57,19 @@ const Keyboard = () => {
         <div>
             <InputKeyboard/>
                 <div className="flex justify-start h-screen tablet:pt-16 tablet:px-16 laptop:pt-32 laptop:px-32 bigScreen:px-80 bigScreen:pt-64 items-start ">
-                 <div className="text-white rounded-lg border-[2px] text-foreColorWhite
-                     border-foreColorWhite absolute left-0 top-0 ml-8 mt-4">
-                      <ChangeKeyboard/>
-                      <ChangeOSKeyboard/>
+                 <div className="text-white rounded-lg text-foreColorWhite
+                     absolute left-0 top-0 ml-8 mt-4 flex flex-row">
+
+                      <div className="border-[2px] border-foreColorWhite mr-4 rounded-lg">
+                        <ChangeKeyboard/>
+                      </div>
+                    
+                      <div className="border-[2px] border-foreColorWhite mr-4 rounded-lg">
+                        <ChangeOSKeyboard/>
+                      </div>  
+                     
                   </div>
+               
                 
                   
                     <div className=" h-[45%] w-[60%] flex flex-col gap-2 px-4 pt-4">
