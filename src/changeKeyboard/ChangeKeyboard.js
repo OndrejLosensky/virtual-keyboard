@@ -25,12 +25,12 @@ const ChangeKeyboard = () => {
 
           <ul>
             <li>
-              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg" onClick={handleClick}>
+              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={handleClick}>
                 Česká [CZ]
               </button>
             </li>
             <li>
-              <button className="block w-full py-2 px-4 text-left" onClick={handleClick}>
+              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={handleClick}>
                 Anglická [ENG]
               </button>
             </li>
