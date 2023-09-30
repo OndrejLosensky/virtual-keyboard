@@ -6,6 +6,7 @@ import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 
 const Keyboard = () => {
 
+
   const [x, setX] = useState('');
 
   const handleButtonClick = (newValue, buttonText) => {
@@ -48,9 +49,9 @@ const Keyboard = () => {
 
     return (
         <div>
-
+         
             <InputKeyboard/>
-
+              
               
                 <div className="flex justify-start h-screen tablet:pt-4 tablet:px-16 laptop:px-32 laptop:pt-8 bigScreen:px-80 bigScreen:pt-16 items-center ">
                   
@@ -58,6 +59,7 @@ const Keyboard = () => {
                      border-foreColorWhite absolute left-0 top-0 ml-8 mt-4">
                       <ChangeKeyboard/>
                   </div>
+                
                   
                     <div className=" h-[45%] w-[65%] flex flex-col gap-2 px-4 pt-4">
                         {/* Vrchní řada znaků ESC - F9*/}
@@ -138,7 +140,7 @@ const Keyboard = () => {
                     </div>
                     
               </div>         
-              
+  
         </div>            
     )
 }
