@@ -85,7 +85,18 @@ const Keyboard = () => {
 
     return (
         <div>
+
+            <p className="text-foreColorWhite pt-6  text-center text-lg font-thin">
+
+              Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
+              a také obsahuje funkci pro otestování funkčnosti vaší klávesnice <br/>
+              klávesnice je dostupná v českém rozložení a anglickém a ve verzích na Mac a Windows <br/>
+              kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
+
+            </p>
+
             <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
+
                 <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt- items-start ">
                  <div className="text-white rounded-lg text-foreColorWhite
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
@@ -98,12 +109,8 @@ const Keyboard = () => {
                         <ChangeOSKeyboard/>
                       </div>  
                      
-                  </div>
-               
-                  <button onClick={() => setIsGreenToggleOn(!isGreenToggleOn)}>
-                  Toggle Green Buttons
-                  </button>   
-                  
+                  </div>  
+                
                     <div className=" h-[45%] w-[60%] flex flex-col gap-2 px-4 pt-4">
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
