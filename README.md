@@ -8,7 +8,7 @@ dále také lze klikat na jednotlivá tlačítka, a ty vypíšou, které bylo st
 aplikace je v druhé verzi.
 ---------------------------
 _____________________________________________________________________
- přidané věci:
+    přidané věci:
         Dropdown tlačítko, kde bude později možnost měnit klávesnici
         Input, kde se zobrazuje vámi psaný text
         ukazatel stisklé klávesy a naposledy stisklého tlačítka se přesunul vedle klávesnice
