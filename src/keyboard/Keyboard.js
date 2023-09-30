@@ -56,7 +56,7 @@ const Keyboard = () => {
     return (
         <div>
             <InputKeyboard/>
-                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt-48 items-start ">
+                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt- items-start ">
                  <div className="text-white rounded-lg text-foreColorWhite
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
 
@@ -126,7 +126,7 @@ const Keyboard = () => {
                             
                         {/* Pátá řada znaků CONTROL - <>*/}
                         <div className="flex flex-row gap-2">
-                          {["control", "y", "x", "c", "v", "b", "n", "m", "?", "alt", "<"].map((key) => (
+                          {["control", "y", "x", "c", "v", "b", "n", "m", "?", "alt"].map((key) => (
                             <ButtonKey
                               key={key}
                               text={key}
