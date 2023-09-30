@@ -6,6 +6,7 @@ import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
 import refreshIcon from "../assets/refreshIcon.png"
 
+
 const Keyboard = () => {
 
   const [x, setX] = useState('');
@@ -89,15 +90,21 @@ const Keyboard = () => {
 
           <div>
             {/*Funkce pro zobrazování stisknutých naposledy klávech*/}
-            <div className="flex flex-col pt-2 absolute right-0 mr-24"> 
-                <DisplayKey/>            
-               
-                <div className="flex flex-row">
-                    <h3 className="text-foreColorWhite text-sm pt-6 pr-8 "> poslední stisklé tlačítko </h3>
-                    <p className="text-foreColorWhite text-2xl pt-2 flex justify-center"> "{x}"</p>    
-                </div>
-                        
+            <div className="flex flex-col pt-2 absolute right-0 mr-20"> 
+                <DisplayKey/>                             
             </div> 
+
+            <div className="flex flex-col pt-2 absolute left-0 ml-20"> 
+              <div className="flex flex-col justify-center items-center pt-8">
+                <div className="flex flex-row">
+                  <p className="text-lg text-foreColorWhite pb-2 uppercase"> "{x}" </p>
+                  <h3 className="text-foreColorWhite pl-8 text-sm"> Virtuální klávesnice</h3>
+                </div>
+      
+                <div className="border-b-2 border-foreColorWhite w-[100%]"> </div>
+              </div>                        
+            </div> 
+
             <p className="text-foreColorWhite pt-6  text-center text-lg font-thin">
 
               Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
