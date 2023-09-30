@@ -6,18 +6,20 @@ import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 
 const Keyboard = () => {
 
-
   const [x, setX] = useState('');
+  const [clickedKeys, setClickedKeys] = useState([]);
+  const [buttonColors, setButtonColors] = useState({});
+
 
   const handleButtonClick = (newValue, buttonText) => {
     setX(newValue);
     setClickedKeys([...clickedKeys, buttonText]);
   };
 
-  const [clickedKeys, setClickedKeys] = useState([]);
-
-  // Funkce pro zvýraznění klávesy, která je stisklá
-  const [buttonColors, setButtonColors] = useState({});
+   // Funkce, která loguje každou stisklou klávesu
+   const logKeyPressed = (key) => {
+    console.log(`Stisknutá klávesa: ${key}`);
+    };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -27,6 +29,7 @@ const Keyboard = () => {
         ...prevColors,
         [key]: true,
       }));
+      logKeyPressed(key);
     };
     const handleKeyUp = (e) => {
         // Resetuje barvu jakmile se klávesa pustí
