@@ -1,6 +1,8 @@
 import React from "react";
 
 const ButtonKey = ({ text, isHighlighted, onClick, isGreenToggleOn }) => {
+
+
   return (
     <div className="text-foreColorWhite">
       <button

@@ -1,6 +1,6 @@
 import React from "react";
-import setIsGreenToggleOn from "../keyboard/Keyboard"
-import isGreenToggleOn from "../keyboard/Keyboard"
+
+
 const Header = () => {
 
 
