@@ -18,7 +18,9 @@ const Keyboard = () => {
 
    // Funkce, která loguje každou stisklou klávesu
    const logKeyPressed = (key) => {
+    
     console.log(`Stisknutá klávesa: ${key}`);
+
     };
 
   useEffect(() => {
