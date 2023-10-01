@@ -3,7 +3,7 @@ import DisplayKey from "../displayKey/DisplayKey";
 import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
-import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
+//import ChangeOSKeyboard from "../changeKeyboard/ChangeOSKeyboard";
 import refreshIcon from "../../assets/refreshIcon.png"
 
 
@@ -128,10 +128,11 @@ const Keyboard = () => {
                         <ChangeKeyboard/>
                       </div>
                     
+                    {/*
                       <div className="mt-1 mr-4 rounded-lg">
                         <ChangeOSKeyboard/>
                       </div>  
-                     
+                     */}
                   </div>  
                 
         
