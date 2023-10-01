@@ -77,7 +77,6 @@ const Keyboard = () => {
 
   const logKeyPressed = (key, x) => {
     console.log(`Stisknutá klávesa: ${key}`);
-    console.log(`Virtuální klávesa: ${x}`);
   };
 
   useEffect(() => {
