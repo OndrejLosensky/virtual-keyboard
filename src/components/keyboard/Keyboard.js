@@ -94,7 +94,7 @@ const Keyboard = () => {
                 <DisplayKey/>    
                 <div className="flex flex-col justify-center items-center pt-8">
                   <div className="flex flex-row">
-                    <h3 className="text-foreColorWhite pr-20 text-sm"> virtuální klávesnice</h3>
+                    
                     <p className="text-lg text-foreColorWhite pb-2 uppercase text-right"> "{x}" </p>
                   </div>
                   <div className="border-b-2 border-foreColorWhite w-[100%]">
