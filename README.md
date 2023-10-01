@@ -42,13 +42,32 @@ ______________________________________________________________________
 
 
 UPDATE:
-    Backspace na fyzické klávesnici funguje!!!!
+    Backspace na fyzické klávesnici funguje JEN NĚKDY!!!!
 __________________________________________________________________________
+
+
+ČTVRTÁ VERZE: 1.10.2023
+---------------------------
+_____________________________________________________________________
+    přidané věci:
+        + tlačítko na změnu jazyka klávesnice je nyní funkční
+        + ukazal naposledy stisklé klávesy je v pravém dolním rohu
+        + ukazatel posledního stisklého tlačítka na obrazovce je odstraněn
+        + tlačítko, které přepíná mezi Windows a MacOS klávesnicí je dočasně schované
+        + console loguje každý stisk klávesy nebo tlačítka
+        + tlačítko pro přepínání tmavého a světlého režimu (zatím jen vzhledově)
+
+
+        - klávesy nejsou seřazeny přesně do tvaru klávesnice
+        - backspace někdy nereaguje
+        - když kliknete na virtuální tlačítko např. "enter", tak se objeví v INPUTu napsáno "enter"
+
+_____________________________________________________________________
 
 
 DO BUDOUCNA:
 ___________________________________________________________________
-        zapisovat do nějakého souboru nebo proměnné, která by se zobrazila
+
         vytvořit funkci, která udělá test zda vaše klávesnice funguje v pořádku
         přepínání tmavého a světlého režimu
         možnost zaznamenávat každé stisknuté tlačítko do logu 
