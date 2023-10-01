@@ -9,7 +9,8 @@ import refreshIcon from "../../assets/refreshIcon.png"
 
 const Keyboard = () => {
 
-  const [setX] = useState('');
+  // eslint-disable-next-line
+  const [x,setX] = useState('');
   const [clickedKeys, setClickedKeys] = useState([]);
   const [buttonColors, setButtonColors] = useState({});
   const [inputValue, setInputValue] = useState('');
