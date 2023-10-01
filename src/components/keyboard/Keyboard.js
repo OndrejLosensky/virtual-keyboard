@@ -90,6 +90,7 @@ const Keyboard = () => {
 
           <div>
             {/*Funkce pro zobrazování stisknutých naposledy klávech*/}
+            {/*
             <div className="flex flex-col pt-2 absolute right-0 mr-20"> 
                 <DisplayKey/>    
                 <div className="flex flex-col justify-center items-center pt-8">
@@ -101,8 +102,8 @@ const Keyboard = () => {
                   </div>
                 </div>                   
             </div> 
-
-            <p className="text-foreColorWhite pt-6  text-center text-lg font-thin">
+            */}
+            <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
 
               Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
               a také obsahuje funkci pro otestování funkčnosti vaší klávesnice <br/>
