@@ -105,8 +105,7 @@ const Keyboard = () => {
             */}
             <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
 
-              Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete,<br/>
-              a také obsahuje funkci pro otestování funkčnosti vaší klávesnice <br/>
+              Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete<br/>
               klávesnice je dostupná v českém rozložení a anglickém a ve verzích na Mac a Windows <br/>
               kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
 
