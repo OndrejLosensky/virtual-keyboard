@@ -29,7 +29,7 @@ const Keyboard = () => {
       row2: ["`", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace",],
       row3: ["Tab", "Q", "W", "E", "R", "T", "y", "U", "I", "O", "P", "Enter",],
       row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'",],
-      row5: ["control", "z", "x", "c", "v", "b", "n", "m", "?", "alt",],
+      row5: ["control", "z", "x", "c", "v", "b", "n", "m", "?",".","/", "alt",],
       // Anglická klávesnice
     },
     czech: {
