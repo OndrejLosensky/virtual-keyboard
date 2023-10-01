@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
-const ChangeKeyboard = () => {
+const ChangeKeyboard = ({ onLayoutChange }) => {
+  
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-
-  const handleClick = () => {
-    alert("tato funkce není momentálně")
-  }
 
   return (
     <div className="relative inline-block text-left">
@@ -25,12 +22,12 @@ const ChangeKeyboard = () => {
 
           <ul>
             <li>
-              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={handleClick}>
+              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={() => onLayoutChange("czech")}>
                 Česká [CZ]
               </button>
             </li>
             <li>
-              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={handleClick}>
+              <button className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300" onClick={() => onLayoutChange("english")}>
                 Anglická [ENG]
               </button>
             </li>
