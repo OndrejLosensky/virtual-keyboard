@@ -149,7 +149,7 @@ const Keyboard = () => {
                             buttonSuccess={buttonSuccess[key]}
                             isGreenToggleOn={isGreenToggleOn}
                             key={key}
-                            text={key}
+                            text={key} // text je pouze to co se zobrazuje, tudíž je možné vytvořit vlastní pole 
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
