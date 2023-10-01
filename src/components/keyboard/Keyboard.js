@@ -9,7 +9,7 @@ import refreshIcon from "../../assets/refreshIcon.png"
 
 const Keyboard = () => {
 
-  const [x, setX] = useState('');
+  const [setX] = useState('');
   const [clickedKeys, setClickedKeys] = useState([]);
   const [buttonColors, setButtonColors] = useState({});
   const [inputValue, setInputValue] = useState('');
@@ -49,8 +49,9 @@ const Keyboard = () => {
     }
   };
 
-  const logKeyPressed = (key) => {
+  const logKeyPressed = (key, x) => {
     console.log(`Stisknutá klávesa: ${key}`);
+    console.log(`Virtuální klávesa: ${x}`);
   };
 
   useEffect(() => {
@@ -216,11 +217,15 @@ const Keyboard = () => {
                         </div> 
                         
                         </div>  
-                      
-                       
+                          <div className="text-foreColorWhite absolute bottom-0 right-0 flex flex-row">
+                            <div className="mb-4 mr-12">
+                              <DisplayKey/>
+                            </div>
+                          </div>   
               
-                        </div>         
+                </div>         
                       
+               
         </div>            
     )
 }
