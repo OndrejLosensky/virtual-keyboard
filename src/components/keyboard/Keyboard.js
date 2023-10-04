@@ -37,7 +37,7 @@ const Keyboard = () => {
       row2: ["<", "+", "ě","š", "č", "ř","ž","ý","á","í","=","backspace",],
       row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","enter",],
       row4: ["capslock", "a", "s","d", "f", "g","h","j","k","l","ů","§",],
-      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-","shift"],
+      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-","shift",],
       // česká klávesnice
     },
   };
