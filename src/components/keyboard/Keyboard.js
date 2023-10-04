@@ -25,11 +25,12 @@ const Keyboard = () => {
      // Rozložení jednotlivých klávesnic
   const layouts = {
     english: {
-      row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","|",],
+      row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","f10","f11"],
       row2: ["`", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace",],
       row3: ["Tab", "Q", "W", "E", "R", "T", "y", "U", "I", "O", "P", "Enter",],
       row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'",],
       row5: ["control", "z", "x", "c", "v", "b", "n", "m", "?",".","/", "alt",],
+      row6: ["fn","control","spacebar","option",],
       // Anglická klávesnice
     },
     czech: {
@@ -38,6 +39,7 @@ const Keyboard = () => {
       row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","enter",],
       row4: ["capslock", "a", "s","d", "f", "g","h","j","k","l","ů","§",],
       row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-",],
+      row6: ["fn","control","spacebar","option",],
       // česká klávesnice
     },
   };
@@ -153,6 +155,10 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
+                            isEscape={key === 'escape'}
+                            isF10={key === 'f10'}
+                            isF11={key === 'f11'}
+                        
                             />
                           ))}
                         </div>
@@ -168,6 +174,7 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
+                            isBackspace={key === 'backspace'}
                             />
                           ))}
                         </div>
@@ -183,6 +190,8 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
+                            isEnter={key === 'Enter'}
+                            isTab={key === 'Tab'}
                             />
                           ))}
                         </div>
@@ -199,6 +208,7 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
+                            isCapsLock={key === 'capslock'}
                             />
                           ))}
                         </div>
@@ -215,13 +225,28 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
+                            isAlt={key === 'alt'}
+                            isControl={key === 'control'}
                             />
                           ))}
                         </div>
 
                         {/* Poslední řada znaků FN - OPTION*/}
                         <div className="flex flex-row gap-2">
-                            
+                        {layouts[keyboardLayout].row6.map((key) => (
+                          <ButtonKey
+                            buttonSuccess={buttonSuccess[key]}
+                            isGreenToggleOn={isGreenToggleOn}
+                            key={key}
+                            text={key}
+                            isHighlighted={buttonColors[key.toLowerCase()]}
+                            onClick={() => handleButtonClick(key.toUpperCase())}
+                            keyboardLayout={keyboardLayout} // Pass the current layout
+                            isSpaceBar={key === 'spacebar'}
+                            isControl={key === 'control'}
+                            isOption={key === 'option'}
+                            />
+                          ))}
                         </div> 
                         
                         {/* Zobrazuje naposledy stisklou klávesu v pravém dolním rohu*/}
