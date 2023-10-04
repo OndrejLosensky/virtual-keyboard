@@ -57,7 +57,7 @@ const Keyboard = () => {
   const handleButtonClick = (newValue, buttonText) => {
 
     // Pole tlačítek, které chceme momentálně ignorovat
-    const keysToIgnore = ["ENTER", "ALT", "SPACEBAR", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
+    const keysToIgnore = ["ENTER", "ALT", "SPACEBAR"," ", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
 
     // Funkce, která kontroluje jestli je stisklá klávesa v listu ignorovaných
     if (keysToIgnore.includes(newValue)) {
