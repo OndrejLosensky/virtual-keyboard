@@ -74,7 +74,14 @@ _____________________________________________________________________
         + speciální klávesy jsem nastavil samostatně velké (základní šířka klávesy je 50px)
 
         - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu 
+
+
+        NEFUNGUJE LOGOVÁNÍ SPACEBARU
+            PRO SPRÁVNÝ VZHLED MUSÍ BÝT ZADANÉ " " MÍSTO "SPACEBAR"
+            JENŽE PŘI ZADÁNÍ POUHÉ MEZERY SE TLAČÍTKO ZMENŠÍ A NESEDÍ DO KLÁVESNICE
 _____________________________________________________________________
+
+
 
 Aplikace je vytvořena mnou.
 dne 29.9.2023
