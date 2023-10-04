@@ -64,13 +64,17 @@ _____________________________________________________________________
 
 _____________________________________________________________________
 
-DO BUDOUCNA:
-___________________________________________________________________
 
-        vytvořit funkci, která udělá test zda vaše klávesnice funguje v pořádku
-        přepínání tmavého a světlého režimu
-        možnost zaznamenávat každé stisknuté tlačítko do logu 
-____________________________________________________________________
+PÁTÁ VERZE: 4.10.2023
+---------------------------
+_____________________________________________________________________
+    přidané funkce:
+        + klávesy jako je ENTER apod. se již nevypisují do Inputu
+        + opravený vzhled klávesnice, vypadá nyní jako obdélník, má pravidelný tvar
+        + speciální klávesy jsem nastavil samostatně velké (základní šířka klávesy je 50px)
+
+        - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu 
+_____________________________________________________________________
 
 Aplikace je vytvořena mnou.
 dne 29.9.2023
