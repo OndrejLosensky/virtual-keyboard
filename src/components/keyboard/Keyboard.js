@@ -37,7 +37,7 @@ const Keyboard = () => {
       row2: ["<", "+", "ě","š", "č", "ř","ž","ý","á","í","=","backspace",],
       row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","enter",],
       row4: ["capslock", "a", "s","d", "f", "g","h","j","k","l","ů","§",],
-      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-","shift",],
+      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-",],
       // česká klávesnice
     },
   };
@@ -116,7 +116,7 @@ const Keyboard = () => {
               <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
 
               Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete<br/>
-              klávesnice je dostupná v českém rozložení a anglickém a ve verzích na Mac a Windows <br/>
+              klávesnice je dostupná v českém rozložení, které lze přepnout tlačítkem<br/>
               kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
 
               </p>
