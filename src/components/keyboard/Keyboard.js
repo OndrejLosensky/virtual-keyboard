@@ -45,7 +45,7 @@ const Keyboard = () => {
   };
 
   const handlePhysicalKeyboardInput = (e) => {
-    if (e.key === "Backspace") {
+    if (e.key === "backspace") {
       // smaže poslední přidaný charakter
       setInputValue((prevValue) => prevValue.slice(0, -1));
     } else {
@@ -55,6 +55,15 @@ const Keyboard = () => {
   };
 
   const handleButtonClick = (newValue, buttonText) => {
+
+    // Pole tlačítek, které chceme momentálně ignorovat
+    const keysToIgnore = ["ENTER", "ALT", "SPACEBAR", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE"];
+
+    // Funkce, která kontroluje jestli je stisklá klávesa v listu ignorovaných
+    if (keysToIgnore.includes(newValue)) {
+      return; // Při kliknutí na jakékoliv tlačítko z tohoto pole se nic nebude dít (dříve to vypisovalo hodnotu tlačítka do INPUTU)
+    }
+
     if (newValue === "BACKSPACE") {
       setInputValue((prevValue) => prevValue.slice(0, -1));
     } else {
