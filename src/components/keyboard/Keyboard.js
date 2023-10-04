@@ -34,11 +34,11 @@ const Keyboard = () => {
       // Anglická klávesnice
     },
     czech: {
-      row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","|",],
+      row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","f10","f11",],
       row2: ["<", "+", "ě","š", "č", "ř","ž","ý","á","í","=","backspace",],
-      row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","enter",],
+      row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","Enter",],
       row4: ["capslock", "a", "s","d", "f", "g","h","j","k","l","ů","§",],
-      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-",],
+      row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-","alt",],
       row6: ["fn","control","spacebar","option",],
       // česká klávesnice
     },
@@ -227,6 +227,7 @@ const Keyboard = () => {
                             keyboardLayout={keyboardLayout} // Pass the current layout
                             isAlt={key === 'alt'}
                             isControl={key === 'control'}
+                            isShift={key === 'shift'}
                             />
                           ))}
                         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
-const ButtonKey = ({ text, isHighlighted, onClick, isCapsLock, isSpaceBar, isBackspace, isEscape, isEnter, isAlt, isTab, isControl, isOption, isF10 , isF11,isGreenToggleOn }) => {
+const ButtonKey = ({ text, isHighlighted, onClick, isCapsLock, isSpaceBar, isBackspace, isEscape, isEnter, isAlt, isTab, isControl, isOption, isF10, isShift , isF11,isGreenToggleOn }) => {
 
   const KeyStyle = {
-    width: isCapsLock ? '120px' : isBackspace ? '120px' : isSpaceBar ? '450px': isEscape ? '100px': isEnter ? '90px': isTab ? '80px': isAlt ? '60px': isControl ? '110px' : isOption ? '120px' : isF10? '60px': isF11 ? '60px' : '50px',
+    width: isCapsLock ? '120px' : isBackspace ? '120px' : isSpaceBar ? '450px': isEscape ? '100px': isEnter ? '90px': isTab ? '80px': isAlt ? '60px': isControl ? '110px' : isOption ? '120px': isShift ? '110px' : isF10? '60px': isF11 ? '60px' : '50px',
   }
 
   return (
