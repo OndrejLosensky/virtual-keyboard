@@ -30,7 +30,7 @@ const Keyboard = () => {
       row3: ["Tab", "Q", "W", "E", "R", "T", "y", "U", "I", "O", "P", "Enter",],
       row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'",],
       row5: ["control", "z", "x", "c", "v", "b", "n", "m", "?",".","/", "alt",],
-      row6: ["fn","control","spacebar","option",],
+      row6: ["fn","control"," ","option",],
       // Anglická klávesnice
     },
     czech: {
@@ -39,7 +39,7 @@ const Keyboard = () => {
       row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","Enter",],
       row4: ["capslock", "a", "s","d", "f", "g","h","j","k","l","ů","§",],
       row5: ["shift", "y", "x","c", "v", "b","n","m","?",".","-","alt",],
-      row6: ["fn","control","spacebar","option",],
+      row6: ["fn","control"," ","option",],
       // česká klávesnice
     },
   };
