@@ -85,6 +85,16 @@ _____________________________________________________________________
         NEFUNGUJE LOGOVÁNÍ SPACEBARU
             PRO SPRÁVNÝ VZHLED MUSÍ BÝT ZADANÉ " " MÍSTO "SPACEBAR"
             JENŽE PŘI ZADÁNÍ POUHÉ MEZERY SE TLAČÍTKO ZMENŠÍ A NESEDÍ DO KLÁVESNICE
+
+
+        
+        5.10
+        
+        přidání macbook a windows layoutu klávesnice, které je zatím rozbité
+        + chci přidat funkci, která vedle tlačítka změnit klávesnici zobrazí aktuální zvolenou kl.
+
+
+        DEFAULTNĚ JSEM NASTAVIL ČESKÉ ROZLOŽENÍ KLÁVESNICE PŘI NAČTĚNÍ STRÁNKY!!!!
 _____________________________________________________________________
 
 
