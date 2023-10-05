@@ -16,7 +16,7 @@ const Keyboard = () => {
   const [inputValue, setInputValue] = useState('');
   const [buttonSuccess, setButtonSuccess] = useState({});
   const [isGreenToggleOn, setIsGreenToggleOn] = useState(false);
-  const [keyboardLayout, setKeyboardLayout] = useState("english");
+  const [keyboardLayout, setKeyboardLayout] = useState("czech");
 
     const handleLayoutChange = (layout) => {
       setKeyboardLayout(layout);
@@ -57,7 +57,7 @@ const Keyboard = () => {
   const handleButtonClick = (newValue, buttonText) => {
 
     // Pole tlačítek, které chceme momentálně ignorovat
-    const keysToIgnore = ["ENTER", "ALT", "SPACEBAR"," ", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
+    const keysToIgnore = ["ENTER", "ALT", "SPACEBAR"," ","SHIFT", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
 
     // Funkce, která kontroluje jestli je stisklá klávesa v listu ignorovaných
     if (keysToIgnore.includes(newValue)) {
