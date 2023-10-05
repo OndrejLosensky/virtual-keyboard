@@ -42,6 +42,22 @@ const Keyboard = () => {
       row6: ["fn","control"," ","option",],
       // česká klávesnice
     },
+    macbook: {
+      row1: ["escape", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "eject"],
+      row2: ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "delete"],
+      row3: ["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\"],
+      row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", "return"],
+      row5: ["shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "shift"],
+      row6: ["fn", "control", "option", "command", " ", "command", "option",],
+    },
+    windows: {
+      row1: ["escape", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "prtsc"],
+      row2: ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "backspace"],
+      row3: ["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\"],
+      row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", "return"],
+      row5: ["shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "shift"],
+      row6: ["ctrl", "win", "alt", " ", "alt", "ctrl",],
+    },
   };
 
   const handlePhysicalKeyboardInput = (e) => {

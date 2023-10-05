@@ -55,6 +55,20 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
                 Anglická [ENG]
               </button>
             </li>
+            <li>
+            <button
+                className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+                onClick={() => handleLayoutItemClick("macbook")}
+              >
+                MacOS kl.
+              </button>
+            </li>
+            <button
+                className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+                onClick={() => handleLayoutItemClick("windows")}
+              >
+                Windows kl.
+              </button>
           </ul>
         </div>
       )}
