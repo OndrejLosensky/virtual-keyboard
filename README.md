@@ -79,7 +79,8 @@ _____________________________________________________________________
         - přidat pozadí klávesnice pro více druhů zobrazování
         - při stisku klávesy shift předělat klávesy na UPPERCASE, jinak nechat LOWERCASE
         - CAPS stejně jako shift, akorát musí být na klik a ne držení
-
+        
+        PŘIDAT KLÁVESOVÉ ZKRATKY PRO REFRESH STRÁNKY, ZMĚNU JAZYKA KLÁVESNICE APOD.
 
         NEFUNGUJE LOGOVÁNÍ SPACEBARU
             PRO SPRÁVNÝ VZHLED MUSÍ BÝT ZADANÉ " " MÍSTO "SPACEBAR"
