@@ -76,6 +76,9 @@ _____________________________________________________________________
         - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu nebo Windows
         - test zatím není funkční  
         - potřeba přidat na spodní okraj stránky čast, kde se vypíše, že test proběhl úspěšně
+        - přidat pozadí klávesnice pro více druhů zobrazování
+        - při stisku klávesy shift předělat klávesy na UPPERCASE, jinak nechat LOWERCASE
+        - CAPS stejně jako shift, akorát musí být na klik a ne držení
 
 
         NEFUNGUJE LOGOVÁNÍ SPACEBARU
