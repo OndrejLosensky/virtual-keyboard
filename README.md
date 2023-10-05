@@ -73,7 +73,9 @@ _____________________________________________________________________
         + opravený vzhled klávesnice, vypadá nyní jako obdélník, má pravidelný tvar
         + speciální klávesy jsem nastavil samostatně velké (základní šířka klávesy je 50px)
 
-        - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu 
+        - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu nebo Windows
+        - test zatím není funkční  
+        - potřeba přidat na spodní okraj stránky čast, kde se vypíše, že test proběhl úspěšně
 
 
         NEFUNGUJE LOGOVÁNÍ SPACEBARU
