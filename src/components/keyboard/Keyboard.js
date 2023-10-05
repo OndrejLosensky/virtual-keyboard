@@ -145,7 +145,7 @@ const Keyboard = () => {
               {/* Input pole pro zobrazení napsaných znaků*/}
             <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
 
-                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-24 laptop:px-32 bigScreen:px-80 bigScreen:pt-48 ">
+                <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-18 laptop:px-32 bigScreen:px-80 bigScreen:pt-48 ">
                  <div className="text-white rounded-lg text-foreColorWhite
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
 
