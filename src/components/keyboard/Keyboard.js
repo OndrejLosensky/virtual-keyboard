@@ -22,7 +22,7 @@ const Keyboard = () => {
       setKeyboardLayout(layout);
     };
 
-     // Rozložení jednotlivých klávesnic
+  // Rozložení jednotlivých klávesnic
   const layouts = {
     english: {
       row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","f10","f11"],
@@ -151,7 +151,7 @@ const Keyboard = () => {
             
                   </div>  
 
-                    <div className=" h-[45%] w-[100%] flex flex-col items-center text-left gap-2 ">
+                    <div className=" h-[45%] w-[100%] flex flex-col items-center text-left gap-2">
 
                         {/* Vrchní řada znaků ESC - F9*/}
                         <div className="flex flex-row gap-2">
