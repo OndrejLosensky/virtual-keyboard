@@ -9,7 +9,7 @@ const ButtonKey = ({ text, isHighlighted, onClick, isCapsLock, isSpaceBar, isBac
   return (
     <div className="text-foreColorWhite">
       <button
-        className={`px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg border-2 border-gray-500 uppercase w-[100px] hover:bg-foreColorWhite hover:text-backColor hover:border-2 border-foreColorWhite duration-300 ${
+        className={`px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg border-2 border-gray-500 w-[100px] hover:bg-foreColorWhite hover:text-backColor hover:border-2 border-foreColorWhite duration-300 ${
           isHighlighted ? "bg-foreColorRed" : ""
         } ${isGreenToggleOn ? "bg-foreColorGreen" : ""}`}
         onClick={onClick}
