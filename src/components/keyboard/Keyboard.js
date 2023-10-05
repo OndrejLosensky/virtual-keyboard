@@ -72,6 +72,11 @@ const Keyboard = () => {
       setInputValue(inputValue + newValue);
     }
 
+    if(newValue === "Capslock")
+    {
+      newValue=newValue.toUpperCase;
+    }
+
     setButtonSuccess((prevState) => ({
       ...prevState,
       [buttonText]: true,
