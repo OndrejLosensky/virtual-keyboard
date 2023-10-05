@@ -257,7 +257,7 @@ const Keyboard = () => {
                             isHighlighted={buttonColors[key.toLowerCase()]}
                             onClick={() => handleButtonClick(key.toUpperCase())}
                             keyboardLayout={keyboardLayout} // Pass the current layout
-                            isSpaceBar={key === 'spacebar'}
+                            isSpaceBar={key === ' '}
                             isControl={key === 'control'}
                             isOption={key === 'option'}
                             />
