@@ -4,7 +4,11 @@ const ButtonKey = ({ text, isHighlighted, onClick, isCapsLock, isSpaceBar, isBac
 
   const KeyStyle = {
     width: isCapsLock ? '120px' : isBackspace ? '120px' : isSpaceBar ? '450px': isEscape ? '100px': isEnter ? '90px': isTab ? '80px': isAlt ? '60px': isControl ? '110px' : isOption ? '120px': isShift ? '110px' : isF10? '60px': isF11 ? '60px' : '50px',
+    padding: isSpaceBar ? '10px' : '0px', 
+    height: isSpaceBar ? '50px' : '50px', 
   }
+
+  
 
   return (
     <div className="text-foreColorWhite">
