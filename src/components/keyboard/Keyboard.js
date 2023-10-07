@@ -284,7 +284,7 @@ const Keyboard = () => {
                         </div>  
                           <div className="text-foreColorWhite absolute bottom-0 right-0 flex flex-row">
                             <div className="mb-4 mr-12">
-                              <DisplayKey/>
+                             {/* <DisplayKey/> */}
                             </div>
                           </div>   
               
