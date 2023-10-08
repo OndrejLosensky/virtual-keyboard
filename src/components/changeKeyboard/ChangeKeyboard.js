@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 const ChangeKeyboard = ({ onLayoutChange }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLayout, setSelectedLayout] = useState("eng");
+  const [currentLayout, setCurrentLayout] = useState("eng");
   const dropdownRef = useRef(null);
 
-  // Tato funkce automaticky zavře dropdown menu jakmile kliknu kamkoliv vedle
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -21,13 +20,13 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
   }, []);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen); // tato funkce spouští dropdown menu
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const handleLayoutItemClick = (layout) => {
-    setSelectedLayout(layout);
-    onLayoutChange(layout); // změna layout při kliknutí na tlačítko
-    setIsDropdownOpen(false); // zavře dropdown menu jakmile kliknu na tlačítko
+    setCurrentLayout(layout);
+    onLayoutChange(layout);
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -39,12 +38,12 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
         >
           Změnit klávesnici
         </button>
-        {isDropdownOpen && (
+        {isDropdownOpen && 'duration-500' && (
           <div className="absolute right-0 mt-4 w-40 bg-white border shadow-md rounded-md">
             <ul>
               <li>
                 <button
-                  className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+                  className={`block w-full py-2 px-4 text-left hover:bg-btnbg duration-300 ${currentLayout === "eng" ? "bg-foreColorRed rounded-md text-white" : ""}`}
                   onClick={() => handleLayoutItemClick("eng")}
                 >
                   Anglicky [ENG]
@@ -52,26 +51,28 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
               </li>
               <li>
                 <button
-                  className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+                  className={`block w-full py-2 px-4 text-left hover:bg-btnbg duration-300 ${currentLayout === "cz" ? "bg-foreColorRed text-white" : ""}`}
                   onClick={() => handleLayoutItemClick("cz")}
                 >
                   Česky [CZ]
                 </button>
               </li>
               <li>
-              <button
-                  className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+                <button
+                  className={`block w-full py-2 px-4 text-left hover:bg-btnbg duration-300 ${currentLayout === "mac" ? "bg-foreColorRed text-white" : ""}`}
                   onClick={() => handleLayoutItemClick("mac")}
                 >
                   MacOS
                 </button>
               </li>
-              <button
-                  className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
+              <li>
+                <button
+                  className={`block w-full py-2 px-4 text-left hover:bg-btnbg duration-300 ${currentLayout === "win" ?"bg-foreColorRed text-white rounded-md" : ""}`}
                   onClick={() => handleLayoutItemClick("win")}
                 >
                   Windows
                 </button>
+              </li>
             </ul>
           </div>
         )}
@@ -79,10 +80,9 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
 
       <div>
         <p className="text-foreColorWhite flex justify-center items-center mt-3 uppercase font-semibold"> 
-             {selectedLayout}
+          {currentLayout}
         </p>
       </div>
-
     </div>
   );
 };
