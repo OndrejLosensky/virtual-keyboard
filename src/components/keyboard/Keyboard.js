@@ -24,11 +24,11 @@ const Keyboard = () => {
     const handleKeyPress = (e) => {
       if (e.ctrlKey && e.key === "s"){ 
         // ULožit poslední text
-      } else if (e.shiftKey && e.key === " "){
+      } else if (e.shiftKey && (e.key === "s" || e.key === "S")){
        // Změnit layout klávesnice
-      } else if (e.shiftKey && e.key === "d") {
+      } else if (e.shiftKey && (e.key === "d" || e.key === "D")) {
         // Otevřít sekci dokumentace
-        
+
       } else if (e.shiftKey && (e.key === "r" || e.key === "R")) {
         // Refreshovat celou aplikaci
         window.location.reload();
