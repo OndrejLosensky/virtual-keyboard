@@ -139,6 +139,7 @@ const Keyboard = () => {
 
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener("keyup", handleKeyPress);
 
     // rozpoznává reálné klávesy od kliknutí na té virtuální
     window.addEventListener("keypress", handlePhysicalKeyboardInput);
@@ -147,6 +148,7 @@ const Keyboard = () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
       window.removeEventListener("keypress", handlePhysicalKeyboardInput);
+      window.removeEventListener("keypress", handleKeyPress);
     };
   }, []);
 
