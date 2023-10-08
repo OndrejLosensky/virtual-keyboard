@@ -20,12 +20,12 @@ const InputKeyboard = ({ inputValue }) => {
       <input
         ref={inputRef}
         type="text"
-        className="text-foreColorWhite font-normal w-[50%] flex justify-center text-center outline-none text-xl bg-backColor py-2"
-        placeholder="Zde se zobrazí váš text"
+        className="text-foreColorWhite font-semibold w-[50%] placeholder:text-foreColorWhite placeholder:uppercase placeholder:font-semibold flex justify-center text-center outline-none text-xl bg-backColor py-2"
+        placeholder="Virtual-keyboard"
         defaultValue= {inputValue}
 
       />
-      <div className="border-b-[1px] border-foreColorWhite w-[50%]"></div>
+     {/*<div className="border-b-[1px] border-foreColorWhite w-[50%]"></div>*/}
     </div>
   );
 };
