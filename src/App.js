@@ -26,6 +26,14 @@ function App() {
           </button>
 
           <h2 className={`text-4xl uppercase text-center pt-6 font-semibold ${!open && 'scale-0'} duration-300`}> dokumentace</h2>
+          <div className={`${!open && 'scale-0'} duration-500`}>
+            <p className="text-center pt-6"> 
+              Zde se nachází kompletní dokumentace k této aplikaci <br/>
+              Najdete zde návod, obsah funkcí i chyby, které aplikace má <br/>
+              také bude ke stažení samostatná klávesnice jako NPM PACKAGE
+            </p>
+          </div>
+         
         </div>
       </div>
     </section>
