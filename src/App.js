@@ -7,6 +7,12 @@ import refreshIcon from "./assets/refreshIcon.png"
 function App() {
   const [open, setOpen] = useState(true);
 
+  const handleKeyPress = (e) => {
+  if (e.shiftKey && (e.key === "d" || e.key === "D")) {
+    // Otevřít sekci dokumentace
+  }
+  }
+
   return (
 
     <section className="w-full h-screen lg:h-full bg-backColor">

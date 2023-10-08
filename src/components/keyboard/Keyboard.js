@@ -4,7 +4,6 @@ import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 
-
 const Keyboard = () => {
 
   // eslint-disable-next-line
@@ -26,9 +25,6 @@ const Keyboard = () => {
         // ULožit poslední text
       } else if (e.shiftKey && (e.key === "s" || e.key === "S")){
        // Změnit layout klávesnice
-      } else if (e.shiftKey && (e.key === "d" || e.key === "D")) {
-        // Otevřít sekci dokumentace
-
       } else if (e.shiftKey && (e.key === "r" || e.key === "R")) {
         // Refreshovat celou aplikaci
         window.location.reload();
