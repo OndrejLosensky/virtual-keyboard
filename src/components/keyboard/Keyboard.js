@@ -30,7 +30,7 @@ const Keyboard = () => {
         // Otevřít sekci dokumentace
       } else if (e.shiftKey && e.key === "r") {
         // Refreshovat celou aplikaci
-        
+        window.location.reload();
       }
     }
 
