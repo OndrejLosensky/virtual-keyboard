@@ -97,6 +97,16 @@ _____________________________________________________________________
         DEFAULTNĚ JSEM NASTAVIL ANGLICKÉ ROZLOŽENÍ KLÁVESNICE PŘI NAČTĚNÍ STRÁNKY!!!!
 _____________________________________________________________________
 
+ŠESTÁ VERZE: 8.10.2023
+---------------------------
+__________________________________________________________________________
+    přidané funkce:
+        + vedle tlačítka na změnu klávesnice se nyní zobrazuje aktuální layout
+        + tlačítko zobrazuje také vybraný layout tím že jeho pole svítí červeně
+        + nová sekce dokumentace (otevření stisknutím šipky vpravo nahoře)
+        + funkce, která zobrazuje poslední stisklou klávesu je v levém dolním rohu
+__________________________________________________________________________
+
 
 
 Aplikace je vytvořena mnou.
