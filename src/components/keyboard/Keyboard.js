@@ -291,6 +291,12 @@ const Keyboard = () => {
                               <DisplayKey/>
                             </div>
                           </div>   
+
+                          {/* ZOBRAZUJE VÝPIS FUNKČNOSTI KLÁVESNICE PO SPUŠTĚNÍ TESTU*/}
+                          {/*<div class="fixed bottom-0 left-0 right-0 flex items-center justify-center">
+                              <p class="mb-2 text-foreColorWhite">Your keyboard is working 100%</p>
+                        </div>*/}
+
               
                 </div>         
                       
