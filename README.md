@@ -105,6 +105,11 @@ __________________________________________________________________________
         + tlačítko zobrazuje také vybraný layout tím že jeho pole svítí červeně
         + nová sekce dokumentace (otevření stisknutím šipky vpravo nahoře)
         + funkce, která zobrazuje poslední stisklou klávesu je v levém dolním rohu
+        + další barvy pro vzhled dokumentace (později ještě pozměním)
+        + nový vzhled inputu
+        + tlačítko REFRESH se přesunulo do sekce dokumentace 
+        
+        - na pozadí již není obrázek
 __________________________________________________________________________
 
 
