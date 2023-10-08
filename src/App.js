@@ -17,7 +17,7 @@ function App() {
             <Keyboard/>
         </div>
         {/* DOKUMENTACE*/}
-        <div className={`${open ? "w-[40%] bg-foreColorWhite": "w-[5%] bg-backColor"} duration-300 absolute right-0 h-full`} >
+        <div className={`${open ? "w-[40%] bg-docuBg": "w-[5%] bg-backColor"} duration-300 absolute text-docuText right-0 h-full`} >
           <button 
           className={`absolute text-foreColorWhite top-4 px-2 left-4 rounded-full  border-4 ${open && "rotate-180 text-backColor"}`}
            style={{"fontSize": "28px"}}

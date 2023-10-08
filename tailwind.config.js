@@ -20,7 +20,7 @@ module.exports = {
       btnbg: "#5f90a0",
       bgRed: "#f40b1f",
       docuText: "#17000b",
-      docuBg: "#e6d1f3",
+      docuBg: "#f6eef9",
       },
   },
   plugins: [],
