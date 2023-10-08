@@ -8,9 +8,7 @@ function App() {
 
   return (
 
-    <section className="w-full h-screen lg:h-full bg-backColor" style={{ 
-      backgroundImage: `url(${backgroundImage})`,
-    }}>
+    <section className="w-full h-screen lg:h-full bg-backColor">
       <div className="flex flex-row">
         <div className={`${open ? "w-[60%]": "w-[95%]"} duration-300`}>
             <Header/>
@@ -18,9 +16,10 @@ function App() {
         </div>
         {/* DOKUMENTACE*/}
 
-        <div className={`${open ? "w-[40%] bg-foreColorWhite": "w-[5%] bg-backColor"} bg-foreColorWhite duration-300 absolute right-0 h-full`} >
+        <div className={`${open ? "w-[40%] bg-foreColorWhite": "w-[5%] bg-backColor"} duration-300 absolute right-0 h-full`} >
           <button 
-          className={`absolute left-5 top-3 rounded-full px-2 border-4 ${open && "rotate-180"}`} style={{"fontSize": "32px"}}
+          className={`absolute text-foreColorWhite top-4 px-2 left-4 rounded-full  border-4 ${open && "rotate-180 text-backColor"}`}
+           style={{"fontSize": "28px"}}
           onClick={()=>setOpen(!open)}
           >
             ←
