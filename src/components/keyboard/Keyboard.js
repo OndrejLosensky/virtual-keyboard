@@ -16,7 +16,7 @@ const Keyboard = () => {
   const [inputValue, setInputValue] = useState('');
   const [buttonSuccess, setButtonSuccess] = useState({});
   const [isGreenToggleOn, setIsGreenToggleOn] = useState(false);
-  const [keyboardLayout, setKeyboardLayout] = useState("czech");
+  const [keyboardLayout, setKeyboardLayout] = useState("english"); // určuje, který layout se zobrazuje defaultně
 
     const handleLayoutChange = (layout) => {
       setKeyboardLayout(layout);
@@ -147,9 +147,9 @@ const Keyboard = () => {
             <div>
               <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
 
-              Jednoduchá virtuální klávesnice, která zobrazuje jaké klávesy stisknete<br/>
-              klávesnice je dostupná v českém rozložení, které lze přepnout tlačítkem<br/>
-              kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> zde</span> spustíte test funkčnosti vaší klávesnice
+              Simple Virtual keyboard, that displays keys you press<br/>
+              It's available in English and Czech layout<br/>
+              by clicking<span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> here</span> You can run test of keyboard
 
               </p>
             </div>
