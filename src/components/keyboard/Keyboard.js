@@ -156,7 +156,7 @@ const Keyboard = () => {
 
              
               {/* Input pole pro zobrazení napsaných znaků*/}
-              <div className="tablet:pt-12 tablet:px-16 laptop:pt-18 laptop:px-32 bigScreen:px-80 bigScreen:pt-48">
+              <div className="pl-16 tablet:pt-2 tablet:px-16 laptop:pt-8 laptop:px-32 bigScreen:px-80 bigScreen:pt-48">
                   <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
               </div>
            
