@@ -1,5 +1,4 @@
 import React from "react";
-import refreshIcon from "../../assets/refreshIcon.png"
 
 const Header = () => {
 
@@ -11,10 +10,6 @@ const Header = () => {
                     Virtual-keyboard
                 </h1>
 
-                 {/*přidání tlačítka, které vždy obnoví stránku po kliknutí na něj*/}
-            <div className="cursor-pointer">
-              <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
-            </div>
             </div>
             <div>
                
