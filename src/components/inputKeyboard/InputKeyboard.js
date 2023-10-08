@@ -21,7 +21,7 @@ const InputKeyboard = ({ inputValue }) => {
         ref={inputRef}
         type="text"
         className="text-foreColorWhite font-normal w-[50%] flex justify-center text-center outline-none text-xl bg-backColor py-2"
-        placeholder="This is for your typed text"
+        placeholder="Zde se zobrazí váš text"
         defaultValue= {inputValue}
 
       />

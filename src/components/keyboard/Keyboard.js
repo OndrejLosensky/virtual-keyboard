@@ -147,9 +147,9 @@ const Keyboard = () => {
             <div>
               <p className="text-foreColorWhite pt-4  text-center text-lg font-thin">
 
-              Simple Virtual keyboard, that displays keys you press<br/>
-              It's available in English, Czech, MacOS and Windows layouts<br/>
-              You can run test of functionality by clicking <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}>here</span>
+              Virtuální klávesnice, která zobrazuje stisklé klávesy<br/>
+              je dostupná v Anglickém, Českém, Windows a Mac rozpoložení<br/>
+              test klávesnice můžete spustit kliknutím <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}>zde</span>
 
               </p>
               
