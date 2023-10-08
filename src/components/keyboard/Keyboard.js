@@ -26,6 +26,8 @@ const Keyboard = () => {
         console.log("Klávesová zkratka: CTRL + S")
       } else if (e.shiftKey && e.key === " "){
         console.log("Klávesová zkratka: SHIFT + Spacebar")
+      } else if (e.shiftKey && e.key === "D"){
+        console.log("SHIFT + D")
       }
     }
 
