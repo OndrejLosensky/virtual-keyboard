@@ -145,11 +145,10 @@ const Keyboard = () => {
     return (
         <div >
             <div>
-              <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
+              <p className="text-foreColorWhite pt-4  text-center text-lg font-thin">
 
               Simple Virtual keyboard, that displays keys you press<br/>
               It's available in English, Czech, MacOS and Windows layouts<br/>
-              When you press key, it shows what key you are holding by turning red<br/>
               You can run test of functionality by clicking <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}>here</span>
 
               </p>
@@ -161,7 +160,10 @@ const Keyboard = () => {
               <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
             </div>
               {/* Input pole pro zobrazení napsaných znaků*/}
-            <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
+              <div>
+                  <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
+              </div>
+           
 
                 <div className="flex justify-start h-screen tablet:pt-12 tablet:px-16 laptop:pt-18 laptop:px-32 bigScreen:px-80 bigScreen:pt-48 ">
                  <div className="text-white rounded-lg text-foreColorWhite
