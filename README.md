@@ -107,7 +107,8 @@ __________________________________________________________________________
         + funkce, která zobrazuje poslední stisklou klávesu je v levém dolním rohu
         + další barvy pro vzhled dokumentace (později ještě pozměním)
         + nový vzhled inputu
-        + tlačítko REFRESH se přesunulo do sekce dokumentace 
+        + tlačítko REFRESH se přesunulo do sekce dokumentace
+        + první funkční klávesová zkratka pro obnovení stránky 
         
         - na pozadí již není obrázek
 __________________________________________________________________________
