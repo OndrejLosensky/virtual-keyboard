@@ -33,7 +33,7 @@ function App() {
               <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
           </div>
 
-          <div className={`${!open && 'scale-0'} duration-500`} style={{ overflowY: 'auto', maxHeight: '100%', paddingRight: '15px' }}>
+          <div className={`${!open && 'scale-0'} duration-500`} style={{ overflowY: 'auto', maxHeight: '100%', paddingRight: '0px' }}>
             <p className="text-center pt-6 pb-12"> 
               Zde se nachází kompletní dokumentace k této aplikaci <br/>
               Najdete zde návod, obsah funkcí i chyby, které aplikace má <br/>
