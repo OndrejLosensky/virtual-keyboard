@@ -5,7 +5,7 @@ import { useState } from "react";
 import refreshIcon from "./assets/refreshIcon.png"
 
 function App() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
 
