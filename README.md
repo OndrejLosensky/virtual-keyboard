@@ -71,7 +71,7 @@ _____________________________________________________________________
     přidané funkce:
         + klávesy jako je ENTER apod. se již nevypisují do Inputu
         + opravený vzhled klávesnice, vypadá nyní jako obdélník, má pravidelný tvar
-        + speciální klávesy jsem nastavil samostatně velké (základní šířka klávesy je 50px)
+        + speciální klávesy jsem nastavil samostatně velké (základní šířka a výška klávesy je 50px)
 
         - Na klávesnici se nevyskytují přesně všechny klávesy jako na klávesnici Macu nebo Windows
         - test zatím není funkční  
@@ -94,7 +94,7 @@ _____________________________________________________________________
         + chci přidat funkci, která vedle tlačítka změnit klávesnici zobrazí aktuální zvolenou kl.
 
 
-        DEFAULTNĚ JSEM NASTAVIL ČESKÉ ROZLOŽENÍ KLÁVESNICE PŘI NAČTĚNÍ STRÁNKY!!!!
+        DEFAULTNĚ JSEM NASTAVIL ANGLICKÉ ROZLOŽENÍ KLÁVESNICE PŘI NAČTĚNÍ STRÁNKY!!!!
 _____________________________________________________________________
 
 
