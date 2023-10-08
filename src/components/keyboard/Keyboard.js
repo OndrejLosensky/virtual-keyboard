@@ -23,11 +23,11 @@ const Keyboard = () => {
     // AKtivuje klávesovou zkratku
     const handleKeyPress = (e) => {
       if (e.ctrlKey && e.key === "s"){ 
-        console.log("Klávesová zkratka: CTRL + S")
+        console.log("Klávesová zkratka: CTRL + S") // uložit napsanej text
       } else if (e.shiftKey && e.key === " "){
-        console.log("Klávesová zkratka: SHIFT + Spacebar")
+        console.log("Klávesová zkratka: SHIFT + Spacebar") // Klávesová zkratka pro přepnutí klávesnice
       } else if (e.shiftKey && e.key === "D"){
-        console.log("SHIFT + D")
+        console.log("SHIFT + D") // Klávesová zkratka, která otevře sekci dokumentace
       } else if (e.ctrlKey && e.key === "escape") {
         console.log("CTRL + ESCAPE") // Klávesová zkratka pro Refresh stránky
       }
