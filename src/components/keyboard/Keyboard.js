@@ -5,7 +5,6 @@ import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
 
 
-
 const Keyboard = () => {
 
   // eslint-disable-next-line
@@ -169,6 +168,7 @@ const Keyboard = () => {
                       {/*Komponenta, která mění layout klávesnice z české na anglickou*/}
                       <div className="">
                         <ChangeKeyboard onLayoutChange={handleLayoutChange} />
+                       
                       </div>
             
                   </div>  
