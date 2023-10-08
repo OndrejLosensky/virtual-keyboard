@@ -34,7 +34,7 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
         onClick={toggleDropdown}
         className="text-white py-2 px-4 rounded-md"
       >
-        Změnit klávesnici
+        Change keyboard
       </button>
       {isDropdownOpen && (
         <div className="absolute right-0 mt-4 w-40 bg-white border shadow-md rounded-md">
@@ -42,17 +42,17 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
             <li>
               <button
                 className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
-                onClick={() => handleLayoutItemClick("czech")}
+                onClick={() => handleLayoutItemClick("english")}
               >
-                Česká [CZ]
+                English [ENG]
               </button>
             </li>
             <li>
               <button
                 className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
-                onClick={() => handleLayoutItemClick("english")}
+                onClick={() => handleLayoutItemClick("czech")}
               >
-                Anglická [ENG]
+                Czech [CZ]
               </button>
             </li>
             <li>
@@ -60,14 +60,14 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
                 className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
                 onClick={() => handleLayoutItemClick("macbook")}
               >
-                MacOS kl.
+                MacOS
               </button>
             </li>
             <button
                 className="block w-full py-2 px-4 text-left hover:bg-btnbg duration-300"
                 onClick={() => handleLayoutItemClick("windows")}
               >
-                Windows kl.
+                Windows
               </button>
           </ul>
         </div>
