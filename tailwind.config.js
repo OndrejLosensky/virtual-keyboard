@@ -21,6 +21,7 @@ module.exports = {
       bgRed: "#f40b1f",
       docuText: "#17000b",
       docuBg: "#f6eef9",
+      arrowColor: "#24132f",
       },
   },
   plugins: [],
