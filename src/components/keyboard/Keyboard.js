@@ -3,7 +3,7 @@ import DisplayKey from "../displayKey/DisplayKey";
 import ButtonKey from "../button/ButtonKey";
 import InputKeyboard from "../inputKeyboard/InputKeyboard";
 import ChangeKeyboard from "../changeKeyboard/ChangeKeyboard";
-import refreshIcon from "../../assets/refreshIcon.png"
+
 
 
 const Keyboard = () => {
@@ -155,10 +155,7 @@ const Keyboard = () => {
               
             </div>
 
-              {/*přidání tlačítka, které vždy obnoví stránku po kliknutí na něj*/}
-            <div className="absolute top-0 right-0 mr-8 mt-6 cursor-pointer ">
-              <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
-            </div>
+             
               {/* Input pole pro zobrazení napsaných znaků*/}
               <div>
                   <InputKeyboard inputValue={inputValue} setInputValue={setInputValue} />
