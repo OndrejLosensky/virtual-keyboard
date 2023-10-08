@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 import Keyboard from "./components/keyboard/Keyboard";
 //import backgroundImage from "./assets/backgroundImage.png"
 import { useState } from "react";
+import refreshIcon from "./assets/refreshIcon.png"
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -26,6 +27,12 @@ function App() {
           </button>
 
           <h2 className={`text-4xl uppercase text-center pt-6 font-semibold ${!open && 'scale-0'} duration-300`}> dokumentace</h2>
+          
+          {/*přidání tlačítka, které vždy obnoví stránku po kliknutí na něj*/}
+          <div className={`${!open && 'scale-0'} cursor-pointer absolute right-0 top-0 mt-6 mr-4 w-[40px] h-[40px]`}>
+              <img src={refreshIcon} alt="refresh" onClick={() => window.location.reload()}/>
+          </div>
+
           <div className={`${!open && 'scale-0'} duration-500`}>
             <p className="text-center pt-6"> 
               Zde se nachází kompletní dokumentace k této aplikaci <br/>
