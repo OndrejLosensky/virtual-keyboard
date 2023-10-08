@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const ChangeKeyboard = ({ onLayoutChange }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLayout, setSelectedLayout] = useState("english");
+  const [selectedLayout, setSelectedLayout] = useState("eng");
   const dropdownRef = useRef(null);
 
   // Tato funkce automaticky zavře dropdown menu jakmile kliknu kamkoliv vedle
