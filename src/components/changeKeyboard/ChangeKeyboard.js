@@ -32,7 +32,7 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
   return (
     <div className="flex flex-row ">
      
-      <div className="relative inline-block text-left border-[2px] border-foreColorWhite ml-12 mr-4 rounded-lg" ref={dropdownRef}>
+      <div className="relative inline-block text-left border-[2px] border-foreColorWhite  mr-4 rounded-lg" ref={dropdownRef}>
         
         <button
           onClick={toggleDropdown}
