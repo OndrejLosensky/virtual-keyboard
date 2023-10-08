@@ -84,7 +84,7 @@ const Keyboard = () => {
     if (newValue === "BACKSPACE") {
       setInputValue((prevValue) => prevValue.slice(0, -1));
     } else if (newValue === " ") {
-      setInputValue(inputValue + " "); // Add a space
+      setInputValue(inputValue + " "); // přidá jednu mezeru
     } else {
       setX(newValue);
       setClickedKeys([...clickedKeys, buttonText]);
