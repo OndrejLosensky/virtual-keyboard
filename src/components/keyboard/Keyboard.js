@@ -149,7 +149,7 @@ const Keyboard = () => {
 
               Simple Virtual keyboard, that displays keys you press<br/>
               It's available in English and Czech layout<br/>
-              by clicking<span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}> here</span> You can run test of keyboard
+              by clicking <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}>here</span> You can run test of keyboard
 
               </p>
             </div>
