@@ -12,12 +12,12 @@ function App() {
     <section className="w-full h-screen lg:h-full bg-backColor">
       <div className="flex flex-row">
 
-        <div className={`${open ? "w-[60%]": "w-[95%]"} duration-300`}>
+        <div className={`${open ? "bigScreen:w-[60%] laptop:w-[70%]": "w-[95%]"} duration-300`}>
             <Header/>
             <Keyboard/>
         </div>
         {/* DOKUMENTACE*/}
-        <div className={`${open ? "w-[40%] bg-docuBg": "w-[5%] bg-backColor"} duration-300 absolute text-docuText right-0 h-full`} >
+        <div className={`${open ? "bigScreen:w-[40%] laptop:w-[30%] bg-docuBg": "w-[5%] bg-backColor"} duration-300 absolute text-docuText right-0 h-full`} >
           <button 
           className={`absolute text-foreColorWhite top-4 px-2 left-4 rounded-full  border-4 ${open && "rotate-180 text-arrowColor"}`}
            style={{"fontSize": "28px"}}

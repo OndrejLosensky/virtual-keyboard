@@ -144,7 +144,7 @@ const Keyboard = () => {
     return (
         <div >
             <div>
-              <p className="text-foreColorWhite pt-4  text-center text-lg font-thin">
+              <p className="text-foreColorWhite bigScreen:pt-8 laptop:pt-4 tablet:pt-2  text-center text-lg font-thin">
 
               Virtuální klávesnice, která zobrazuje stisklé klávesy<br/>
               je dostupná v Anglickém, Českém, Windows a Mac rozpoložení<br/>
