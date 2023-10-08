@@ -148,7 +148,8 @@ const Keyboard = () => {
               <p className="text-foreColorWhite pt-8  text-center text-lg font-thin">
 
               Simple Virtual keyboard, that displays keys you press<br/>
-              It's available in English and Czech layout<br/>
+              It's available in English, Czech, MacOS and Windows layouts<br/>
+              When you press key, it shows what key you are holding by turning red<br/>
               by clicking <span className="cursor-pointer text-foreColorOrange font-semibold" onClick={() => setIsGreenToggleOn(!isGreenToggleOn)} style={{ textDecoration: "underline" }}>here</span> You can run test of keyboard
 
               </p>
