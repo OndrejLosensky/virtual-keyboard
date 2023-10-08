@@ -29,7 +29,7 @@ const Keyboard = () => {
       } else if (e.shiftKey && e.key === "D"){
         console.log("SHIFT + D")
       } else if (e.ctrlKey && e.key === "escape") {
-        console.log("CTRL + ESCAPE")
+        console.log("CTRL + ESCAPE") // Klávesová zkratka pro Refresh stránky
       }
     }
 
