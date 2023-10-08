@@ -19,8 +19,8 @@ function App() {
         {/* DOKUMENTACE*/}
         <div className={`${open ? "bigScreen:w-[40%] laptop:w-[30%] bg-docuBg": "w-[5%] bg-backColor"} duration-300 absolute text-docuText right-0 h-full`} >
           <button 
-          className={`absolute text-foreColorWhite top-4 px-2 bigScreen:left-4 laptop:left-2 rounded-full  border-4 ${open && "rotate-180 text-arrowColor"}`}
-           style={{"fontSize": "20px"}}
+          className={`absolute text-foreColorWhite top-2 px-2 bigScreen:left-4 laptop:left-2 rounded-full  border-4 ${open && "rotate-180 text-arrowColor"}`}
+           style={{"fontSize": "32px", "scale": "75%"}}
           onClick={()=>setOpen(!open)}
           >
             ←
