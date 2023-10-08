@@ -28,7 +28,8 @@ const Keyboard = () => {
        // Změnit layout klávesnice
       } else if (e.shiftKey && e.key === "d") {
         // Otevřít sekci dokumentace
-      } else if (e.shiftKey && e.key === "r") {
+        
+      } else if (e.shiftKey && (e.key === "r" || e.key === "R")) {
         // Refreshovat celou aplikaci
         window.location.reload();
       }
