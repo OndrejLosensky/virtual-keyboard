@@ -283,8 +283,8 @@ const Keyboard = () => {
                         
                         {/* Zobrazuje naposledy stisklou klávesu v pravém dolním rohu*/}
                         </div>  
-                          <div className="text-foreColorWhite absolute bottom-0 right-0 flex flex-row">
-                            <div className="mb-4 mr-12">
+                          <div className="text-foreColorWhite absolute bottom-0 ml-8 left-0 mb-6">
+                            <div>
                               <DisplayKey/>
                             </div>
                           </div>   
