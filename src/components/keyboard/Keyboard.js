@@ -20,6 +20,13 @@ const Keyboard = () => {
       setKeyboardLayout(layout);
     };
 
+    // AKtivuje klávesovou zkratku
+    const handleKeyPress = (e) => {
+      if (e.ctrlKey && e.key === "s"){
+        alert("Zkratka aktivována")
+      }
+    }
+
   // Rozložení jednotlivých klávesnic
   const layouts = {
     eng: {
@@ -130,6 +137,7 @@ const Keyboard = () => {
 
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener("keydown", handleKeyPress)
 
     // rozpoznává reálné klávesy od kliknutí na té virtuální
     window.addEventListener("keypress", handlePhysicalKeyboardInput);
@@ -138,6 +146,7 @@ const Keyboard = () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
       window.removeEventListener("keypress", handlePhysicalKeyboardInput);
+      window.removeEventListener("keydown", handleKeyPress)
     };
   }, []);
 
@@ -302,4 +311,4 @@ const Keyboard = () => {
     )
 }
 
-export default Keyboard
+export default Keyboard;
