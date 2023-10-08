@@ -5,7 +5,7 @@ import { useState } from "react";
 import refreshIcon from "./assets/refreshIcon.png"
 
 function App() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleKeyPress = (e) => {
   if (e.shiftKey && (e.key === "d" || e.key === "D")) {
