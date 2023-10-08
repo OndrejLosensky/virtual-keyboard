@@ -22,7 +22,7 @@ const Keyboard = () => {
 
     // AKtivuje klávesovou zkratku
     const handleKeyPress = (e) => {
-      if (e.ctrlKey && e.key === "s"){
+      if (e.ctrlKey && e.key === " "){
         alert("Zkratka aktivována")
       }
     }
