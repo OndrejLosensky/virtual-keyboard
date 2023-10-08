@@ -20,11 +20,12 @@ function App() {
         <div className={`${open ? "bigScreen:w-[40%] laptop:w-[30%] bg-docuBg": "w-[5%] bg-backColor"} duration-300 absolute text-docuText right-0 h-full`} >
           <button 
           className={`absolute text-foreColorWhite top-4 px-2 bigScreen:left-4 laptop:left-2 rounded-full  border-4 ${open && "rotate-180 text-arrowColor"}`}
-           style={{"fontSize": "28px"}}
+           style={{"fontSize": "20px"}}
           onClick={()=>setOpen(!open)}
           >
             ←
           </button>
+          <div className={`border-b-[2px] h-[60px] text-2xl border-b-foreColorWhite mt-2 ${open && 'scale-0'}`}></div>
 
           <h2 className={`bigScreen:text-4xl laptop:text-2xl uppercase text-center pt-6 font-semibold ${!open && 'scale-0'} duration-300`}> dokumentace</h2>
           
