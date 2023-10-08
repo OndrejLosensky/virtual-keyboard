@@ -16,7 +16,7 @@ const Keyboard = () => {
   const [inputValue, setInputValue] = useState('');
   const [buttonSuccess, setButtonSuccess] = useState({});
   const [isGreenToggleOn, setIsGreenToggleOn] = useState(false);
-  const [keyboardLayout, setKeyboardLayout] = useState("english"); // určuje, který layout se zobrazuje defaultně
+  const [keyboardLayout, setKeyboardLayout] = useState("eng"); // určuje, který layout se zobrazuje defaultně
 
     const handleLayoutChange = (layout) => {
       setKeyboardLayout(layout);
@@ -24,7 +24,7 @@ const Keyboard = () => {
 
   // Rozložení jednotlivých klávesnic
   const layouts = {
-    english: {
+    eng: {
       row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","f10","f11"],
       row2: ["`", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace",],
       row3: ["Tab", "Q", "W", "E", "R", "T", "y", "U", "I", "O", "P", "Enter",],
@@ -33,7 +33,7 @@ const Keyboard = () => {
       row6: ["fn","control"," ","option",],
       // Anglická klávesnice
     },
-    czech: {
+    cz: {
       row1: ["escape", "f1", "f2","f3", "f4", "f5","f6","f7","f8","f9","f10","f11",],
       row2: ["<", "+", "ě","š", "č", "ř","ž","ý","á","í","=","backspace",],
       row3: ["Tab", "q", "w","e", "r", "t","z","u","i","o","p","Enter",],
@@ -42,7 +42,7 @@ const Keyboard = () => {
       row6: ["fn","control"," ","option",],
       // česká klávesnice
     },
-    macbook: {
+    mac: {
       row1: ["escape", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "eject"],
       row2: ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "delete"],
       row3: ["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\"],
@@ -50,7 +50,7 @@ const Keyboard = () => {
       row5: ["shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", ],
       row6: ["fn", "control", "option", "command", " ",],
     },
-    windows: {
+    win: {
       row1: ["escape", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "prtsc"],
       row2: ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "backspace"],
       row3: ["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\"],
@@ -170,7 +170,7 @@ const Keyboard = () => {
                      absolute left-0 top-0 ml-8 mt-4 flex flex-row">
 
                       {/*Komponenta, která mění layout klávesnice z české na anglickou*/}
-                      <div className="border-[2px] border-foreColorWhite mr-4 rounded-lg">
+                      <div className="">
                         <ChangeKeyboard onLayoutChange={handleLayoutChange} />
                       </div>
             
