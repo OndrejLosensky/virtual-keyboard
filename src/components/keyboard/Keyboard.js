@@ -23,9 +23,14 @@ const Keyboard = () => {
     // AKtivuje klávesovou zkratku
     const handleKeyPress = (e) => {
       if (e.ctrlKey && e.key === "s"){ 
-        console.log("Klávesová zkratka: CTRL + S")
+        // ULožit poslední text
       } else if (e.shiftKey && e.key === " "){
-        console.log("Klávesová zkratka: SHIFT + Spacebar")
+       // Změnit layout klávesnice
+      } else if (e.shiftKey && e.key === "d") {
+        // Otevřít sekci dokumentace
+      } else if (e.shiftKey && e.key === "r") {
+        // Refreshovat celou aplikaci
+        
       }
     }
 
