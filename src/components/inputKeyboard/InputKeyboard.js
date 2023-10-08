@@ -21,7 +21,7 @@ const InputKeyboard = ({ inputValue }) => {
         ref={inputRef}
         type="text"
         className="text-foreColorWhite font-semibold w-[50%] placeholder:text-foreColorWhite placeholder:uppercase placeholder:font-semibold flex justify-center text-center outline-none text-xl bg-backColor py-2"
-        placeholder="Virtual-keyboard"
+        placeholder="Stiskem začnete psát..."
         defaultValue= {inputValue}
 
       />
