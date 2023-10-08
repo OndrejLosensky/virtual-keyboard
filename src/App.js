@@ -12,6 +12,7 @@ function App() {
             <Header/>
             <Keyboard/>
         </div>
+        {/* DOKUMENTACE*/}
         <div className="w-[40%] bg-foreColorWhite" >
            <h2 className="text-4xl uppercase text-center pt-6 font-semibold"> dokumentace</h2>
         </div>
