@@ -29,7 +29,7 @@ const Keyboard = () => {
       row2: ["`", "1", "2", "3", "4", "5", "6","7", "8", "9", "0", "backspace",],
       row3: ["Tab", "Q", "W", "E", "R", "T", "y", "U", "I", "O", "P", "Enter",],
       row4: ["capslock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'",],
-      row5: ["control", "z", "x", "c", "v", "b", "n", "m", "?",".","/", "alt",],
+      row5: ["shift", "z", "x", "c", "v", "b", "n", "m", "?",".","/", "alt",],
       row6: ["fn","control"," ","option",],
       // Anglická klávesnice
     },
@@ -73,7 +73,7 @@ const Keyboard = () => {
   const handleButtonClick = (newValue, buttonText) => {
 
     // Pole tlačítek, které chceme momentálně ignorovat
-    const keysToIgnore = ["ENTER", "ALT", " "," ","SHIFT", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
+    const keysToIgnore = ["ENTER", "ALT", " ","escape","SHIFT", "OPTION", "CONTROL", "FN", "CAPSLOCK", "TAB", "ESCAPE", "F1", "F2", "F3","F4","F5","F6","F7","F8","F9","F10", "F11"];
 
     // Funkce, která kontroluje jestli je stisklá klávesa v listu ignorovaných
     if (keysToIgnore.includes(newValue)) {
