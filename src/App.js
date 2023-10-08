@@ -42,7 +42,7 @@ function App() {
             </p>
             <div className="text-center">
               <h3 className="uppercase font-bold text-2xl laptop:text-xl py-2"> Funkce</h3>
-                <p> <span className="font-semibold text-xl">Klávesnice má zkratky pro ovládání:</span> <br/> CTRL + SHIFT  =  Změní typ klávesnice <br/> CTRL + R  =  Obnoví stránku</p>
+                <p> <span className="font-semibold text-xl">Klávesnice má zkratky pro ovládání:</span> <br/> SHIFT + SPACEBAR  =  Změní typ klávesnice <br/> CTRL + R  =  Obnoví stránku</p>
               <h3 className="uppercase font-bold text-2xl text-center laptop:text-xl py-2"> Vzhled</h3>
                 <p> <span className="font-semibold text-xl">Seznam všech použitých barev: </span> <br/> Barva pozadí : "#ffffff" <br/> Barva textu : "#ffffff" <br/> Barva kláves : "#ffffff" <br/> </p>
               <h3 className="uppercase font-bold text-2xl text-center laptop:text-xl py-2"> Ovládání</h3>
