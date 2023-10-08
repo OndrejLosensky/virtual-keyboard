@@ -30,8 +30,10 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
   };
 
   return (
-    <div className="flex flex-row px-12">
-      <div className="relative inline-block text-left border-[2px] border-foreColorWhite mr-4 rounded-lg" ref={dropdownRef}>
+    <div className="flex flex-row ">
+     
+      <div className="relative inline-block text-left border-[2px] border-foreColorWhite ml-12 mr-4 rounded-lg" ref={dropdownRef}>
+        
         <button
           onClick={toggleDropdown}
           className="text-white py-2 px-4 rounded-md"
@@ -77,13 +79,14 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
           </div>
         )}
       </div>
-
-      <div>
-        <p className="text-foreColorWhite flex justify-center items-center mt-3 uppercase font-semibold"> 
-          {currentLayout}
-        </p>
-      </div>
+      <div className="">
+          <p className="text-foreColorWhite flex justify-center mt-3 items-center uppercase font-semibold"> 
+            {currentLayout}
+          </p>
+        </div>
+     
     </div>
+
   );
 };
 
