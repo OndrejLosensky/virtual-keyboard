@@ -36,12 +36,12 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
         
         <button
           onClick={toggleDropdown}
-          className="text-white py-2 px-16 rounded-md uppercase"
+          className="text-white py-2 px-6 rounded-md uppercase"
         >
           {currentLayout}  
         </button>
         {isDropdownOpen && 'duration-500' && (
-          <div className="absolute right-0 mt-4 w-40 bg-white border shadow-md rounded-md">
+          <div className="absolute left-0 mt-4 w-40 bg-white border shadow-md rounded-md">
             <ul>
               <li>
                 <button
