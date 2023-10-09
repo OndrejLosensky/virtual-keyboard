@@ -36,9 +36,9 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
         
         <button
           onClick={toggleDropdown}
-          className="text-white py-2 px-4 rounded-md"
+          className="text-white py-2 px-16 rounded-md uppercase"
         >
-          Změnit klávesnici
+          {currentLayout}  
         </button>
         {isDropdownOpen && 'duration-500' && (
           <div className="absolute right-0 mt-4 w-40 bg-white border shadow-md rounded-md">
@@ -79,11 +79,7 @@ const ChangeKeyboard = ({ onLayoutChange }) => {
           </div>
         )}
       </div>
-      <div className="">
-          <p className="text-foreColorWhite flex justify-center mt-3 items-center uppercase font-semibold"> 
-            {currentLayout}
-          </p>
-        </div>
+    
      
     </div>
 
