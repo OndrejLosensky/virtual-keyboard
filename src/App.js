@@ -19,7 +19,7 @@ function App() {
     <section className="w-full h-screen lg:h-full bg-backColor">
       <div className="flex flex-row">
 
-        <div className={`${open ? "bigScreen:w-[60%] laptop:w-[65%]": "w-[95%]"} duration-300`}>
+        <div className={`${open ? "bigScreen:w-[60%] laptop:w-[65%]": "w-[100%]"} duration-300`}>
             <Header/>
             <Keyboard/>
         </div>
